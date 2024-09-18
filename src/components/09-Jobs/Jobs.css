@@ -1,0 +1,189 @@
+.joinUsContents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 10px;
+  background-image: url("../../assets/Images/img4.JPG");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.joinUsContents::before,
+.joinUsContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.733);
+  z-index: 1;
+}
+
+.joinUsContents > *,
+.joinUsContent > * {
+  position: relative;
+  z-index: 2;
+}
+
+.joinUsContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 10px;
+  background-image: url("../../assets/Images/img2.JPG");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.joinUsContents .sectionTitle,
+.joinUsContent .sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinUsContents .sectionTitle h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding: 15px 0px;
+}
+
+.joinUsContents .sectionTitle p {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding: 10px 10px 20px 10px;
+}
+
+.getAQuote {
+  padding: 50px 10px;
+}
+
+.emailForm h3 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.emailForm .gy-4 .col-lg-12 {
+  color: white;
+}
+
+.quote-bg {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.emailForm {
+  background: #6749498e;
+  padding: 30px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.form-control {
+  border: 1px solid black;
+  border-radius: 0px;
+  padding: 8px;
+}
+
+@media (max-width: 575px) {
+  .emailForm {
+    padding: 20px;
+  }
+}
+
+.emailForm h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0 0 0;
+}
+
+.emailForm p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.emailForm input[type="text"],
+.emailForm input[type="email"],
+.emailForm textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 7px;
+  background-color: color-mix(in srgb, #ffffff, transparent 20%);
+  border-color: color-mix(in srgb, #212529, transparent 80%);
+}
+
+.emailForm input[type="text"]:focus,
+.emailForm input[type="email"]:focus,
+.emailForm textarea:focus {
+  border-color: #0d42ff;
+}
+
+.emailForm input[type="text"]::placeholder,
+.emailForm input[type="email"]::placeholder,
+.emailForm textarea::placeholder {
+  /* color: color-mix(in srgb, #212529, transparent 70%); */
+  color: rgba(0, 0, 0, 0.667);
+}
+
+.emailForm button[type="submit"] {
+  color: #ffffff;
+  background: #0d42ff;
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.emailForm button[type="submit"]:hover {
+  background: color-mix(in srgb, #0d42ff, transparent 20%);
+}
+
+.submitBtn .getStartedBtn {
+  background-color: #ff1a1a;
+  border-color: #ff0000;
+  color: white;
+}
+
+.getStartedBtn:hover,
+.getStartedBtn:focus,
+.getStartedBtn:active {
+  background-color: darkorange;
+  border-color: darkorange;
+  color: white;
+}
+
+.getStartedBtn:active {
+  background-color: darkorange;
+  border-color: darkorange;
+  color: white;
+}
+
+.getStartedBtn:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #666;
+}
