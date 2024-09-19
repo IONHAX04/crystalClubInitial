@@ -147,13 +147,12 @@
   text-shadow: 0 4px 4px rgb(120, 0, 0);
 }
 
-
 .discoverClubIntro .discoverClubIntroContents h5 {
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
 }
 .requestParty .requestPartyContents p,
 .partyGroup .partyGroupContents p,

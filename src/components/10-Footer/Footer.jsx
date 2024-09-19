@@ -115,12 +115,6 @@ export default function Footer() {
                 >
                   {t("footer.contactUs")}
                 </Nav.Link>
-                <Nav.Link
-                  className="text-lg text-slate-400 hover:text-yellow-500"
-                  onClick={() => handleNavigate("/support")}
-                >
-                  {t("footer.support")}
-                </Nav.Link>
               </Nav>
             </Col>
           </Row>
