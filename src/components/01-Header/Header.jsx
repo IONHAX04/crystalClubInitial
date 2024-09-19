@@ -14,8 +14,10 @@ export default function Header() {
     { title: "Gallery", href: "/gallery" },
     { title: "Girls", href: "/girls" },
     { title: "Contact & Reservations", href: "/join" },
+    { title: "Rent Bar", href: "/rent " },
     { title: "Menu Card & Bar", href: "/drinks" },
     { title: "Jobs", href: "/jobs" },
+    { title: "Blogs", href: "/blog" },
     { title: "Translate", href: "/" },
   ];
 
@@ -138,9 +140,9 @@ export default function Header() {
               initial="initial"
               animate="animate"
               exit="exit"
-              style={{ zIndex: "99", background: "#1E293B" }}
+              style={{ zIndex: "99" }}
               // style={{ backgroundColor: "#1E293B" }}
-              className="fixed left-0 top-0 w-full h-screen origin-top text-black p-10"
+              className="fixed left-0 top-0 w-full h-screen origin-top text-black p-10 navbarBgImg"
             >
               <div className="flex h-full flex-col">
                 <div className="flex justify-between">

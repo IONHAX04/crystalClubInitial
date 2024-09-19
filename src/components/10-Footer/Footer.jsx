@@ -19,7 +19,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-dark text-slate-400">
+    <footer className="bg-dark text-white">
       <div className="pt-16 pb-12 border-top border-slate-900 footerBg">
         <Container
           className="col-lg-12"
@@ -38,7 +38,7 @@ export default function Footer() {
               <Nav className="flex-column">
                 <Nav.Link
                   href="javascript:void(0)"
-                  className="text-lg text-slate-400 hover:text-yellow-500"
+                  className="text-lg text-white hover:text-yellow-500"
                 >
                   {t("footer.addressValue")}
                 </Nav.Link>
@@ -50,25 +50,25 @@ export default function Footer() {
               </h3>
               <Nav className="flex-column">
                 <Nav.Link
-                  className="text-lg text-slate-400 hover:text-yellow-500"
+                  className="text-lg text-white hover:text-yellow-500"
                   onClick={() => handleNavigate("/entrance")}
                 >
                   {t("footer.entrance")}
                 </Nav.Link>
                 <Nav.Link
-                  className="text-lg text-slate-400 hover:text-yellow-500"
+                  className="text-lg text-white hover:text-yellow-500"
                   onClick={() => handleNavigate("/gallery")}
                 >
                   {t("footer.gallery")}
                 </Nav.Link>
                 <Nav.Link
-                  className="text-lg text-slate-400 hover:text-yellow-500"
+                  className="text-lg text-white hover:text-yellow-500"
                   onClick={() => handleNavigate("/girls")}
                 >
                   {t("footer.girls")}
                 </Nav.Link>
                 <Nav.Link
-                  className="text-lg text-slate-400 hover:text-yellow-500"
+                  className="text-lg text-white hover:text-yellow-500"
                   onClick={() => handleNavigate("/faq")}
                 >
                   {t("footer.faq")}
@@ -79,25 +79,25 @@ export default function Footer() {
               <h3 className="text-white text-xl mb-3">{t("footer.aboutUs")}</h3>
               <Nav className="flex-column">
                 <Nav.Link
-                  className="text-lg text-slate-400 hover:text-yellow-500"
+                  className="text-lg text-white hover:text-yellow-500"
                   onClick={() => handleNavigate("/experience")}
                 >
                   {t("footer.experience")}
                 </Nav.Link>
                 <Nav.Link
-                  className="text-lg text-slate-400 hover:text-yellow-500"
+                  className="text-lg text-white hover:text-yellow-500"
                   onClick={() => handleNavigate("/jobs")}
                 >
                   {t("footer.jobs")}
                 </Nav.Link>
                 <Nav.Link
-                  className="text-lg text-slate-400 hover:text-yellow-500"
+                  className="text-lg text-white hover:text-yellow-500"
                   onClick={() => handleNavigate("/discover")}
                 >
                   {t("footer.discoverClub")}
                 </Nav.Link>
                 <Nav.Link
-                  className="text-lg text-slate-400 hover:text-yellow-500"
+                  className="text-lg text-white hover:text-yellow-500"
                   onClick={() => handleNavigate("/drinks")}
                 >
                   {t("footer.menu")}
@@ -110,7 +110,7 @@ export default function Footer() {
               </h3>
               <Nav className="flex-column">
                 <Nav.Link
-                  className="text-lg text-slate-400 hover:text-yellow-500"
+                  className="text-lg text-white hover:text-yellow-500"
                   onClick={() => handleNavigate("/contactUs")}
                 >
                   {t("footer.contactUs")}
@@ -139,17 +139,17 @@ export default function Footer() {
                 <Nav.Link
                   href="https://www.instagram.com/crystal_clublounge/"
                   target="_blank"
-                  className="text-slate-400"
+                  className="text-white"
                 >
                   <FaInstagram fontSize={20} />
                 </Nav.Link>
-                <Nav.Link className="text-slate-400">
+                <Nav.Link className="text-white">
                   <FaFacebook fontSize={20} />
                 </Nav.Link>
-                <Nav.Link className="text-slate-400">
+                <Nav.Link className="text-white">
                   <FaXTwitter fontSize={20} />
                 </Nav.Link>
-                <Nav.Link className="text-slate-400">
+                <Nav.Link className="text-white">
                   <FaYoutube fontSize={20} />
                 </Nav.Link>
               </Nav>
