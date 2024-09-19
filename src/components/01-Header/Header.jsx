@@ -119,7 +119,9 @@ export default function Header() {
             <p>Gallery</p>
             <p>Girls</p>
             <p>Contact & Reservations</p>
+            <p>Rent Bar</p>
             <p>Menu Card & Bar</p>
+            <p>Blogs</p>
             <p>Jobs</p>
           </div>
           <div

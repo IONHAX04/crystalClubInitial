@@ -2,12 +2,68 @@
   "nav": {
     "": ""
   },
+  "home": {
+    "homeTitle": "Crystal Club & Lounge",
+    "homeIntroOne": "Experience unforgettable evenings full of elegance, sensuality and first-class entertainment.",
+    "homeIntroTwo": "The Crystal Club & Lounge promises entertaining shows with enchanting girls and great drinks.",
+    "homeIntroThree": "Enjoy breathtaking strip shows and seductive table dances with exotic dancers.",
+    "homeIntroFour": "Our selection of drinks leaves nothing to be desired. Let's have some fun!",
+    "testimonailOne": "“A night at Crystal Club & Lounge is like no other! The ambiance, service, and entertainment are simply unforgettable. Highly recommend!”",
+    "testimonialOneBy": " ~ Simon K.",
+    "aboutUs": "About Us",
+    "aboutUsCont": "Crystal Club & Lounge is a distinguished venue located in Volketswil, Zurich Switzerland. We pride ourselves in offering a unique blend of captivating entertainment. Our table dance club provides guests with an extraordinary experience. Our girls are real entertainers and will make your night at Crystal an unforgettable one. Whether you're visiting for a night or celebrating a birthday with friends, we are committed to delivering exceptional service and spectacular moments.",
+    "discoverClub": "Discover Club"
+  },
+  "gallery": {
+    "gallery": "Gallery",
+    "galleryClub": "Discover Club",
+    "galleryClubQuote": "Ready to make memories at Crystal Club & Lounge? Contact us today to learn more about our offerings or to book your visit.",
+    "galleryClubContact": "Contact us"
+  },
+  "entrance": {
+    "entranceTitle": "Entrance",
+    "crystalDollar": "Crystal Dollars",
+    "entranceRuleOne": "The entrance fee of 10 CHF will be charged with the first drink.",
+    "entranceRuleTwo": "When you order your first drink you will receive 5 Crystal Dollars.",
+    "entranceRuleThree": "The dollars serve as tips for the dancers - 5 Crystal Dollars - 10 Swiss Francs"
+  },
+  "contact": {
+    "contactTitle": "Plan your perfect event",
+    "contactCont": "Our club leaves nothing to be desired and creates the right party atmosphere. Also ideal for bachelor parties.",
+    "contactUsBtn": "Contact Us"
+  },
+  "experience": {
+    "experienceTitle": "The experience",
+    "crystalExperienceTitle": "The Crystal Experience",
+    "peepShow": "PEEP SHOW",
+    "peepTime": "10min | 120 CHF",
+    "briefEncounter": "BRIEF ENCOUNTER",
+    "briefTimeOne": "A 30 minute private show with your muse with a bottle of Prosecco | 360 CHF",
+    "briefTimeTwo": "30 minutes private show with your muse and a bottle of Prosecco | 360 CHF",
+    "partyRoom": "THE PARTY ROOM",
+    "partyRoomOne": "A 1 hour private show with your muse.",
+    "partyRoomTwo": "With a bottle of Champagne in one of our ridiculously fun private party rooms.",
+    "partyRoomTime": "1hr | 850 CHF",
+    "privateFunRoom": "Book a 1 hour private show with your muse and a bottle of champagne in our fun private room.",
+    "privateFunRoomTime": "1hr | 850 CHF",
+    "bookToday": "Book Today",
+    "bookTodayCont": "Experience unforgettable shows, exquisite drinks and enchanting girls in an exclusive ambience in Zurich.",
+    "contactUsToday": "Contact Us Today"
+  },
   "discoverClub": {
     "clubTitle": "The Crystal Club & Lounge",
     "clubQuote": "Spend an unforgettable evening with us…",
     "clubIntroOne": "Lovers of an erotic show on the pole will get their money's worth in our Strip & Table Dance Club. Let yourself be enchanted by our beautiful exotic dancers, who provide entertainment either on the large show stage or up close on the dance poles directly on the table.",
     "clubIntroTwo": "The sexy dancers will be happy to take you to one of our private rooms for a hot private show that will be really erotic.",
-    "clubIntroThree": "The Crystal Club & Lounge leaves nothing to be desired and creates the right party atmosphere. Also ideal for bachelor parties."
+    "clubIntroThree": "The Crystal Club & Lounge leaves nothing to be desired and creates the right party atmosphere. Also ideal for bachelor parties.",
+    "tableDanceTitle": "Table Dance Experience",
+    "tableDanceCont": "Enjoy seductive table dances with exotic dancers. Our range of drinks leaves nothing to be desired - from champagne to spirits. With us you will experience the perfect combination of fun and entertainment.",
+    "stripteaseShowTitle": "Striptease shows",
+    "stripteaseShowCont": "Immerse yourself in a world of sensuality and seduction with our unforgettable strip shows in the Crystal Club & Lounge. Up to eight dancers ignite the fire of passion on stage and put you under a spell of eroticism and glamour. Experience a night full of excitement and sensuality in our exclusive strip show club in Zurich. The shows in the Crystal offer you a unique mix of high-class entertainment and intense passion that you will not soon forget.",
+    "privateDanceTitle": "Private Dances & Private Rooms",
+    "privateDanceCont": "Enjoy the exclusive atmosphere and intimacy of our private rooms in the Crystal Club & Lounge. Immerse yourself in a world of luxury and privacy, where you can relax and be pampered in elegant surroundings. Our lounges and private rooms offer you the perfect retreat for unforgettable moments full of style and elegance with our girls. Experience the highest level of comfort and enjoy your time in our exclusive club!",
+    "partyGroupTitle": "Hen party group",
+    "partyGroupCont": "We are the perfect bachelorette party club. We offer special packages for an unforgettable evening. With us you can celebrate undisturbed until the early hours with your group."
   },
   "join": {
     "joinUs": "Join Our Team",
@@ -40,6 +96,7 @@
     "heardAboutThis": "How did you hear about us?",
     "submit": "Submit"
   },
+  
   "contactUs": {
     "contactUs": "Contact & Reservations",
     "contactUsQuote": "Requests for reservations, group reservations, bachelor parties or booking inquiries. We are happy to help you.",
