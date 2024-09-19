@@ -1,23 +1,29 @@
-import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
+
+import { useRef } from "react";
+import PropTypes from "prop-types";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 import "./Home.css";
-
-import img1 from "../../assets/Logo/logo-red.png";
+import img1 from "../../assets/Images/img4.JPG";
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+
   const IMG_PADDING = 12;
+  const { t } = useTranslation("global");
 
   const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
     return (
-      <div
-      // style={{
-      //   paddingLeft: IMG_PADDING,
-      //   paddingRight: IMG_PADDING,
-      // }}
-      >
-        <div className="relative h-[120vh]">
+      <div>
+        <div className="relative h-[120vh] homePageContx">
           <StickyImage imgUrl={imgUrl} />
           <OverlayCopy heading={heading} subheading={subheading} />
         </div>
@@ -42,12 +48,13 @@ export default function Home() {
           backgroundImage: `url(${imgUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          borderRadius: "10px",
           height: `calc(100vh - ${IMG_PADDING * 2}px)`,
           top: IMG_PADDING,
           scale,
         }}
         ref={targetRef}
-        className="sticky z-0 overflow-hidden rounded-3xl"
+        className="sticky z-4 overflow-hidden rounded-3xl"
       >
         <motion.div
           className="absolute inset-0 bg-neutral-950/70"
@@ -86,51 +93,86 @@ export default function Home() {
     );
   };
 
-  const ExampleContent = () => (
+  const ExampleContent = ({ title, paragraphs, buttonText, onClick }) => (
     <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-      <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-        About Our Club !
-      </h2>
+      <h2 className="col-span-1 text-3xl font-bold md:col-span-4">{title}</h2>
       <div className="col-span-1 md:col-span-8">
-        <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
-          Experience unforgettable evenings full of elegance, sensuality and
-          first-class entertainment. The Crystal Club & Lounge promises
-          entertaining shows with enchanting girls and great drinks.
-        </p>
-        <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-          Enjoy breathtaking striptease shows and seductive table dances with
-          exotic dancers. Our range of drinks leaves nothing to be desired -
-          from champagne to cocktails and spirits. With us you will experience
-          the perfect combination of luxury and entertainment.
-        </p>
-        <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-          Welcome to the Crystal Club & Lounge, where nights become
-          unforgettable.
-        </p>
-        <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-          Learn more <FiArrowUpRight className="inline" />
+        {paragraphs.map((paragraph, index) => (
+          <p key={index} className="mb-8 text-xl text-neutral-600 md:text-2xl">
+            {paragraph}
+          </p>
+        ))}
+        <button
+          className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit"
+          onClick={onClick}
+        >
+          {buttonText} <FiArrowUpRight className="inline" />
         </button>
       </div>
     </div>
   );
 
+  ExampleContent.propTypes = {
+    title: PropTypes.string.isRequired,
+    paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired,
+    buttonText: PropTypes.string,
+    onClick: PropTypes.func.isRequired,
+  };
+
+  TextParallaxContent.propTypes = {
+    imgUrl: PropTypes.string.isRequired,
+    subheading: PropTypes.string.isRequired,
+    heading: PropTypes.string.isRequired,
+    children: PropTypes.node,
+  };
+
+  StickyImage.propTypes = {
+    imgUrl: PropTypes.string.isRequired,
+  };
+
+  OverlayCopy.propTypes = {
+    subheading: PropTypes.string.isRequired,
+    heading: PropTypes.string.isRequired,
+  };
+
+  const contentData1 = {
+    title: t("home.aboutOurClub"),
+    paragraphs: [
+      t("home.homeIntroOne"),
+      t("home.homeIntroTwo"),
+      t("home.homeIntroThree"),
+    ],
+    buttonText: t("gallery.galleryClubContact"),
+  };
+
+  const contentData2 = {
+    title: t("home.aboutUs"),
+    paragraphs: [t("home.aboutUsCont")],
+    buttonText: t("home.discoverClub"),
+  };
+
   return (
     <div className="bg-white">
       <TextParallaxContent
-        // imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Welcome to"
+        subheading={t("home.welcome")}
         imgUrl={img1}
         heading="Crystal Club & Lounge"
       >
-        <ExampleContent />
+        <ExampleContent
+          {...contentData1}
+          onClick={() => handleNavigate("/contactUs")}
+        />
       </TextParallaxContent>
+
       <TextParallaxContent
-        // imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Quality"
+        subheading={t("home.quality")}
         imgUrl={img1}
-        heading="Never compromise."
+        heading={t("home.never")}
       >
-        <ExampleContent />
+        <ExampleContent
+          {...contentData2}
+          onClick={() => handleNavigate("/discover")}
+        />
       </TextParallaxContent>
     </div>
   );

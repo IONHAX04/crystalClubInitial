@@ -20,6 +20,11 @@ export default function Discover() {
             <h3 data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.clubTitle")}
             </h3>
+            <div
+              className="divider"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            ></div>
             <h5 data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.clubQuote")}
             </h5>
@@ -42,6 +47,11 @@ export default function Discover() {
             <h3 data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.tableDanceTitle")}
             </h3>
+            <div
+              className="divider"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            ></div>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.tableDanceCont")}
             </p>
@@ -52,6 +62,11 @@ export default function Discover() {
             <h3 data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.stripteaseShowTitle")}
             </h3>
+            <div
+              className="divider"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            ></div>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.stripteaseShowCont")}
             </p>
@@ -62,6 +77,11 @@ export default function Discover() {
             <h3 data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.privateDanceTitle")}
             </h3>
+            <div
+              className="divider"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            ></div>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.privateDanceCont")}
             </p>
@@ -72,6 +92,11 @@ export default function Discover() {
             <h3 data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.partyGroupTitle")}
             </h3>
+            <div
+              className="divider"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            ></div>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.partyGroupCont")}
             </p>
@@ -82,6 +107,11 @@ export default function Discover() {
             <h3 data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.planYourParty")}
             </h3>
+            <div
+              className="divider"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            ></div>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.planPartyCont")}
             </p>
@@ -91,7 +121,11 @@ export default function Discover() {
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.requestDesc")}
             </p>
-            <button data-aos="fade-up" data-aos-delay="200">
+            <button
+              data-aos="fade-up"
+              data-aos-delay="200"
+              onClick={() => handleNavigate("/contactUs")}
+            >
               {t("discoverClub.contactUs")}
             </button>
           </div>

@@ -1,4 +1,6 @@
+import { useTranslation } from "react-i18next";
 import "./Header.css";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { AnimatePresence, motion } from "framer-motion";
@@ -6,19 +8,28 @@ import { AnimatePresence, motion } from "framer-motion";
 import logo from "../../assets/Logo/logo-black.png";
 
 export default function Header() {
+  const { t } = useTranslation("global");
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+    setOpen(false);
+  };
+
   const navLinks = [
-    { title: "Home", href: "/" },
-    { title: "The Experience", href: "/experience" },
-    { title: "Entrance", href: "/entrance" },
-    { title: "Discover Club", href: "/discover" },
-    { title: "Gallery", href: "/gallery" },
-    { title: "Girls", href: "/girls" },
-    { title: "Contact & Reservations", href: "/join" },
-    { title: "Rent Bar", href: "/rent " },
-    { title: "Menu Card & Bar", href: "/drinks" },
-    { title: "Jobs", href: "/jobs" },
-    { title: "Blogs", href: "/blog" },
-    { title: "Translate", href: "/" },
+    { title: t("footer.home"), href: "/" },
+    { title: t("footer.experience"), href: "/experience" },
+    { title: t("footer.entrance"), href: "/entrance" },
+    { title: t("footer.discoverClub"), href: "/discover" },
+    { title: t("footer.gallery"), href: "/gallery" },
+    { title: t("footer.girls"), href: "/girls" },
+    // { title: t("footer.rent"), href: "/rent " },
+    { title: t("footer.menu"), href: "/drinks" },
+    { title: t("footer.jobs"), href: "/jobs" },
+    // { title: t("footer.blogs"), href: "/blog" },
+    { title: t("footer.contactUs"), href: "/join" },
+    // { title: "Translate", href: "/" },
   ];
 
   const [open, setOpen] = useState(false);
@@ -86,7 +97,7 @@ export default function Header() {
         variants={mobileLinkVars}
         className="text-2xl uppercase text-white text-center pb-2"
       >
-        <p href={href}>{title}</p>
+        <p onClick={() => handleNavigate(href)}>{title}</p>
       </motion.div>
     );
   };
@@ -114,17 +125,27 @@ export default function Header() {
             <img src={logo} height={120} width={120} />
           </div>
           <div className="lg:flex hidden gap-12 text-md text- -400 cursor-pointer">
-            <p>Home</p>
-            <p>The Experience</p>
-            <p>Entrance</p>
-            <p>Discover Club</p>
-            <p>Gallery</p>
-            <p>Girls</p>
-            <p>Contact & Reservations</p>
-            <p>Rent Bar</p>
-            <p>Menu Card & Bar</p>
-            <p>Blogs</p>
-            <p>Jobs</p>
+            <p onClick={() => handleNavigate("/")}>{t("footer.home")}</p>
+            <p onClick={() => handleNavigate("/experience")}>
+              {t("footer.experience")}
+            </p>
+            <p onClick={() => handleNavigate("/entrance")}>
+              {t("footer.entrance")}
+            </p>
+            <p onClick={() => handleNavigate("/discover")}>
+              {t("footer.discoverClub")}
+            </p>
+            <p onClick={() => handleNavigate("/gallery")}>
+              {t("footer.gallery")}
+            </p>
+            <p onClick={() => handleNavigate("/girls")}>{t("footer.girls")}</p>
+            {/* <p onClick={() => handleNavigate("/rent")}>{t("footer.rent")}</p> */}
+            <p onClick={() => handleNavigate("/drinks")}>{t("footer.menu")}</p>
+            <p onClick={() => handleNavigate("/jobs")}>{t("footer.jobs")}</p>
+            {/* <p onClick={() => handleNavigate("/blogs")}>{t("footer.blogs")}</p> */}
+            <p onClick={() => handleNavigate("/contactUs")}>
+              {t("footer.contactUs")}
+            </p>
           </div>
           <div
             className="cursor-pointer pt-px lg:hidden text-md text-black"

@@ -6,6 +6,10 @@
     "menu": "Menu Card & Bar"
   },
   "home": {
+    "welcome": "Welcome To",
+    "aboutOurClub": "About Our Club!",
+    "quality": "Quality",
+    "never": "Never compromise.",
     "homeTitle": "Crystal Club & Lounge",
     "homeIntroOne": "Experience unforgettable evenings full of elegance, sensuality and first-class entertainment.",
     "homeIntroTwo": "The Crystal Club & Lounge promises entertaining shows with enchanting girls and great drinks.",
@@ -129,6 +133,9 @@
     "addressTitle": "Address",
     "addressValue": "Crystal Club & Lounge Sandbuehlstrasse 6 8604 Volketswil Switzerland",
     "quickLinks": "Quick Links",
+    "home": "Home",
+    "rent": "Rent Bars",
+    "blogs": "Blogs",
     "entrance": "Entrance",
     "gallery": "Gallery",
     "girls": "Girls",

@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import { useState } from "react";
 import "./Girls.css";
 
@@ -11,6 +13,7 @@ import img6 from "../../assets/Images/img3.JPG";
 import { IoCloseSharp } from "react-icons/io5";
 
 export default function Girls() {
+  const { t } = useTranslation("global");
   const [model, setModal] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState("");
   const images = [
@@ -52,12 +55,17 @@ export default function Girls() {
         <IoCloseSharp onClick={() => setModal(false)} />
       </div>
       <div className="girls">
+        <h3>{t("footer.girls")}</h3>
+
+        <div className="divider"></div>
         <div className="girlsContainer">
           {images.map((item, index) => {
             return (
               <div
                 className="pics"
                 key={index}
+                data-aos="fade-in"
+                data-aos-delay="200"
                 onClick={() => getItem(item.imgSrc)}
               >
                 <img

@@ -30,6 +30,17 @@
   z-index: 2;
 }
 
+.gallery h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+}
+
+.gallery .divider {
+  width: 50% !important;
+}
+
 .galleryContainer {
   -webkit-column-count: 3;
   -moz-column-count: 3;

@@ -16,6 +16,9 @@ import Contact from "./components/11-ContactUs/Contact";
 
 import TextParallaxContentExample from "./components/Example/Example";
 
+import whatsApp from "./assets/Icons/whatsapp.png";
+import "./App.css";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -54,6 +57,33 @@ export default function App() {
         </Routes>
         <Footer />
       </Router>
+      <div className="chatBotButton">
+        <div
+          className="fixed-bottom chatBot right-100"
+          style={{
+            zIndex: "10",
+            left: "initial",
+            margin: "5px",
+            background: "transparent",
+          }}
+        >
+          <a
+            href="https://wa.me/41767490039"
+            target="_blank"
+            style={{ background: "transparent", backdropFilter: "blur 2rem" }}
+          >
+            <img
+              src={whatsApp}
+              className="whatsAppImage"
+              alt="WhatsApp"
+              style={{
+                background: "transparent",
+                filter: "drop-shadow(10px 7px 10px #f76c45)",
+              }}
+            />
+          </a>
+        </div>
+      </div>
     </>
   );
 }

@@ -42,7 +42,9 @@ export default function Experience() {
           <h4>{t("experience.bookToday")}</h4>
           <div className="divider"></div>
           <p className="col-lg-6">{t("experience.bookTodayCont")}</p>
-          <button>{t("experience.contactUsToday")}</button>
+          <button onClick={() => handleNavigate("/contactUs")}>
+            {t("experience.contactUsToday")}
+          </button>
         </div>
       </div>
     </div>

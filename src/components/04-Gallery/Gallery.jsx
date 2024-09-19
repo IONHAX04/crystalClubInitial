@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./Gallery.css";
 
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+
 import img1 from "../../assets/Discover/clubOne.JPG";
 import img2 from "../../assets/Discover/clubTwo.JPG";
 import img3 from "../../assets/Discover/clubThree.JPG";
@@ -15,6 +18,9 @@ import img10 from "../../assets/Discover/clubTen.JPG";
 import { IoCloseSharp } from "react-icons/io5";
 
 export default function Gallery() {
+  const { t } = useTranslation("global");
+  const navigate = useNavigate();
+
   const [model, setModal] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState("");
   const images = [
@@ -72,12 +78,17 @@ export default function Gallery() {
         <IoCloseSharp onClick={() => setModal(false)} />
       </div>
       <div className="gallery">
+        <h3>{t("gallery.gallery")}</h3>
+
+        <div className="divider"></div>
         <div className="galleryContainer">
           {images.map((item, index) => {
             return (
               <div
                 className="pics"
                 key={index}
+                data-aos="fade-in"
+                data-aos-delay="200"
                 onClick={() => getItem(item.imgSrc)}
               >
                 <img

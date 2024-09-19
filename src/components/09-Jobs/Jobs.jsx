@@ -77,16 +77,16 @@ export default function Jobs() {
             <p data-aos="fade-up" data-aos-delay="350">
               {t("join.contTwo")}
             </p>
-            {/* <p data-aos="fade-up" data-aos-delay="200">
+            <p data-aos="fade-up" data-aos-delay="200">
               {t("join.contThree")}
             </p>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("join.contFour")}
-            </p> */}
+            </p>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("join.contFive")}
             </p>
-            {/* <p data-aos="fade-up" data-aos-delay="200">
+            <p data-aos="fade-up" data-aos-delay="200">
               {t("join.contSix")}
             </p>
             <p data-aos="fade-up" data-aos-delay="200">
@@ -97,7 +97,7 @@ export default function Jobs() {
             </p>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("join.contNine")}
-            </p> */}
+            </p>
           </Col>
         </div>
       </section>
@@ -231,16 +231,6 @@ export default function Jobs() {
                   />
                 </Col>
 
-                <Col md={6}>
-                  <Form.Control
-                    type="text"
-                    name="email"
-                    placeholder={t("join.expectSalary")}
-                    required
-                    onChange={handleChange}
-                  />
-                </Col>
-
                 <Col lg={12}>
                   <Form.Control
                     as="textarea"
@@ -267,6 +257,16 @@ export default function Jobs() {
                     rows={5}
                     name="message"
                     placeholder={t("join.fileUpload")}
+                    onChange={handleChange}
+                  />
+                </Col>
+
+                <Col md={6}>
+                  <Form.Control
+                    type="text"
+                    name="email"
+                    placeholder={t("join.expectSalary")}
+                    required
                     onChange={handleChange}
                   />
                 </Col>
