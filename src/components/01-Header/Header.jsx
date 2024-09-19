@@ -28,7 +28,7 @@ export default function Header() {
     { title: t("footer.menu"), href: "/drinks" },
     { title: t("footer.jobs"), href: "/jobs" },
     // { title: t("footer.blogs"), href: "/blog" },
-    { title: t("footer.contactUs"), href: "/join" },
+    { title: t("footer.contactUs"), href: "/contactUs" },
     // { title: "Translate", href: "/" },
   ];
 
