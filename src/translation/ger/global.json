@@ -54,8 +54,9 @@
     "clubTitle": "Der Crystal Club & Lounge",
     "clubQuote": "Verbringen Sie mit uns einen unvergesslichen Abend…",
     "clubIntroOne": "Liebhaber einer erotischen Show an der Stange kommen in unserem Strip & Table Dance Club voll auf ihre Kosten. Lassen Sie sich von unseren wunderschönen exotischen Tänzerinnen verzaubern, die entweder auf der großen Showbühne oder hautnah an den Tanzstangen direkt am Tisch für Unterhaltung sorgen.",
-    "clubIntroTwo": "Die sexy Tänzerinnen entführen Sie gerne in einen unserer Privaträume für eine heiße Privatshow, die wirklich erotisch sein wird.",
-    "clubIntroThree": "Der Crystal Club & Lounge lässt keine Wünsche offen und sorgt für die richtige Partystimmung. Ideal auch für Junggesellenabschiede.",
+    "clubIntroTwo": "Tänzerinnen, die entweder auf der grossen Show-Bühne oder hautnah an den Tanzstangen direkt auf dem Tisch für Entertainment sorgen. ",
+    "clubIntroThree": "Die sexy Tänzerinnen entführen Sie gerne in einen unserer Privaträume für eine heiße Privatshow, die wirklich erotisch sein wird.",
+    "clubIntroFour": "Der Crystal Club & Lounge lässt keine Wünsche offen und sorgt für die richtige Partystimmung. Ideal auch für Junggesellenabschiede.",
     "tableDanceTitle": "Tabledance-Erlebnis",
     "tableDanceCont": "Enjoy seductive table dances with exotic dancers. Our range of drinks leaves nothing to be desired - from champagne to spirits. With us you will experience the perfect combination of fun and entertainment.",
     "stripteaseShowTitle": "Striptease-Shows",
@@ -63,7 +64,12 @@
     "privateDanceTitle": "Private Tänze und private Räume",
     "privateDanceCont": "Genießen Sie die exklusive Atmosphäre und Intimität unserer Privaträume im Crystal Club & Lounge. Tauchen Sie ein in eine Welt aus Luxus und Privatsphäre, in der Sie in elegantem Ambiente entspannen und sich verwöhnen lassen können. Unsere Lounges und Privaträume bieten Ihnen den perfekten Rückzugsort für unvergessliche Momente voller Stil und Eleganz mit unseren Girls. Erleben Sie höchsten Komfort und genießen Sie Ihre Zeit in unserem exklusiven Club!",
     "partyGroupTitle": "Junggesellinnenabschiedsgruppe",
-    "partyGroupCont": "Wir sind der perfekte Junggesellinnenabschiedsclub. Wir bieten spezielle Pakete für einen unvergesslichen Abend. Bei uns könnt ihr mit eurer Gruppe ungestört bis in die frühen Morgenstunden feiern."
+    "partyGroupCont": "Wir sind der perfekte Junggesellinnenabschiedsclub. Wir bieten spezielle Pakete für einen unvergesslichen Abend. Bei uns könnt ihr mit eurer Gruppe ungestört bis in die frühen Morgenstunden feiern.",
+    "planYourParty": "Planen Sie Ihren perfekter Event mit uns",
+    "planPartyCont": "Unseren Club lässt keine Wünsche offen und sorgt für die richtige Party-Stimmung. Ideal auch für Polterabende, Geburtstage oder Firmenfeier.",
+    "request": "Anfragen für Reservationen oder Buchungsanfrage.",
+    "requestDesc": "Wir sind gerne für Sie da.",
+    "contactUs": "Kontaktieren Sie uns"
   },
   "join": {
     "joinUs": "Werde Teil unseres Teams",

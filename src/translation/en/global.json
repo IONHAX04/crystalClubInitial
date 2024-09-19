@@ -54,16 +54,22 @@
     "clubTitle": "The Crystal Club & Lounge",
     "clubQuote": "Spend an unforgettable evening with us…",
     "clubIntroOne": "Lovers of an erotic show on the pole will get their money's worth in our Strip & Table Dance Club. Let yourself be enchanted by our beautiful exotic dancers, who provide entertainment either on the large show stage or up close on the dance poles directly on the table.",
-    "clubIntroTwo": "The sexy dancers will be happy to take you to one of our private rooms for a hot private show that will be really erotic.",
-    "clubIntroThree": "The Crystal Club & Lounge leaves nothing to be desired and creates the right party atmosphere. Also ideal for bachelor parties.",
+    "clubIntroTwo": "Dancers who provide entertainment either on the big show stage or up close at the dance poles directly on the table.",
+    "clubIntroThree": "The sexy dancers will be happy to take you to one of our private rooms for a hot private show that will be really erotic.",
+    "clubIntroFour": "The Crystal Club & Lounge leaves nothing to be desired and creates the right party atmosphere. Also ideal for bachelor parties.",
     "tableDanceTitle": "Table Dance Experience",
     "tableDanceCont": "Enjoy seductive table dances with exotic dancers. Our range of drinks leaves nothing to be desired - from champagne to spirits. With us you will experience the perfect combination of fun and entertainment.",
-    "stripteaseShowTitle": "Striptease shows",
-    "stripteaseShowCont": "Immerse yourself in a world of sensuality and seduction with our unforgettable strip shows in the Crystal Club & Lounge. Up to eight dancers ignite the fire of passion on stage and put you under a spell of eroticism and glamour. Experience a night full of excitement and sensuality in our exclusive strip show club in Zurich. The shows in the Crystal offer you a unique mix of high-class entertainment and intense passion that you will not soon forget.",
+    "stripteaseShowTitle": "Strip Shows",
+    "stripteaseShowCont": "Up to eight dancers ignite the fire of passion on stage and cast a spell of eroticism and glamour over you. Experience a night full of excitement and sensuality in our exclusive strip show club in Zurich. The shows at Crystal offer you a unique mix of high-class entertainment and intense passion that you will not soon forget.",
     "privateDanceTitle": "Private Dances & Private Rooms",
     "privateDanceCont": "Enjoy the exclusive atmosphere and intimacy of our private rooms in the Crystal Club & Lounge. Immerse yourself in a world of luxury and privacy, where you can relax and be pampered in elegant surroundings. Our lounges and private rooms offer you the perfect retreat for unforgettable moments full of style and elegance with our girls. Experience the highest level of comfort and enjoy your time in our exclusive club!",
-    "partyGroupTitle": "Hen party group",
-    "partyGroupCont": "We are the perfect bachelorette party club. We offer special packages for an unforgettable evening. With us you can celebrate undisturbed until the early hours with your group."
+    "partyGroupTitle": "Hen party & birthday packages",
+    "partyGroupCont": "We are the perfect bachelorette party club. We offer special packages for an unforgettable evening. With us you can celebrate undisturbed until the early hours with your group.",
+    "planYourParty": "Plan your perfect event with us",
+    "planPartyCont": "Our club leaves nothing to be desired and ensures the right party atmosphere. Also ideal for bachelor parties, birthdays or company celebrations.",
+    "request": "Requests for reservations or booking enquiries.",
+    "requestDesc": "We are happy to be there for you.",
+    "contactUs": "Contact us"
   },
   "join": {
     "joinUs": "Join Our Team",
@@ -96,7 +102,13 @@
     "heardAboutThis": "How did you hear about us?",
     "submit": "Submit"
   },
-  
+  "paymentProcess": {
+    "paymentTitle": "Means of payment",
+    "paymentOne": "Bar",
+    "paymentTwo": "Twint",
+    "paymentThree": "Credit cards",
+    "description": "Our approach focuses on understanding your needs and offering practical solutions. From personal advice to practical support."
+  },
   "contactUs": {
     "contactUs": "Contact & Reservations",
     "contactUsQuote": "Requests for reservations, group reservations, bachelor parties or booking inquiries. We are happy to help you.",
