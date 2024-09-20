@@ -22,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.82);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -127,6 +127,9 @@
 
 .emailForm input[type="text"],
 .emailForm input[type="email"],
+.emailForm input[type="datetime-local"],
+.emailForm input[type="number"],
+.emailForm select,
 .emailForm textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -138,12 +141,18 @@
 
 .emailForm input[type="text"]:focus,
 .emailForm input[type="email"]:focus,
+.emailForm input[type="datetime-local"]:focus,
+.emailForm input[type="number"]:focus,
+.emailForm select:focus,
 .emailForm textarea:focus {
-  border-color: #0d42ff;
+  border-color: #ff0d0d;
 }
 
 .emailForm input[type="text"]::placeholder,
 .emailForm input[type="email"]::placeholder,
+.emailForm input[type="datetime-local"]::placeholder,
+.emailForm input[type="number"]::placeholder,
+.emailForm select::placeholder,
 .emailForm textarea::placeholder {
   /* color: color-mix(in srgb, #212529, transparent 70%); */
   color: rgba(0, 0, 0, 0.667);
@@ -151,7 +160,7 @@
 
 .emailForm button[type="submit"] {
   color: #ffffff;
-  background: #0d42ff;
+  background: #ff0d0d;
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -159,7 +168,7 @@
 }
 
 .emailForm button[type="submit"]:hover {
-  background: color-mix(in srgb, #0d42ff, transparent 20%);
+  background: color-mix(in srgb, #ff0d0d, transparent 20%);
 }
 
 .submitBtn .getStartedBtn {

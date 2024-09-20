@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-
+import Gallery from "../04-Gallery/Gallery";
 import "./Discover.css";
 
 export default function Discover() {
@@ -131,6 +131,7 @@ export default function Discover() {
           </div>
         </div>
       </div>
+      <Gallery />
     </div>
   );
 }

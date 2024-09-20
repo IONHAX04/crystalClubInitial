@@ -5,6 +5,8 @@
 .whatsAppImage {
   width: 60px;
   margin: 20px;
+  background: transparent;
+  /* filter: drop-shadow(10px 7px 10px #ed00007a); */
 }
 
 @media (max-width: 768px) {

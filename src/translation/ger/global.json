@@ -116,6 +116,19 @@
     "paymentThree": "Kreditkarten",
     "description": "Unser Ansatz konzentriert sich darauf, Ihre Bedürfnisse zu verstehen und praktische Lösungen anzubieten. Von persönlicher Beratung bis hin zu praktischer Unterstützung."
   },
+  "rentBar": {
+    "rentOurBar": "Mieten Sie unsere Bar",
+    "rentOne": "Veranstalten Sie Ihr nächstes besonderes Event im Crystal Club & Lounge, dem perfekten Ort für unvergessliche Feiern. Ob Geburtstag, Junggesellenabschied oder Firmenfeier, unser Club bietet eine einzigartige Mischung aus Eleganz, exotischer Unterhaltung und einer erstklassigen Getränkeauswahl.",
+    "rentTwo": "Bereit, Ihre Veranstaltung zu planen? Füllen Sie einfach das untenstehende Formular aus, um sich über die Anmietung unserer Bar zu erkundigen. Wir helfen Ihnen, einen außergewöhnlichen Abend für Sie und Ihre Gäste zu gestalten.",
+    "formTitle": "Buchen Sie Ihre Bar hier!",
+    "eventDate": "Datum und Uhrzeit der Veranstaltung",
+    "numberOfPerson": "Anzahl der Personen",
+    "eventType": "Ereignistyp",
+    "birthDay": "Geburtstag",
+    "bachelor": "Junggesellenabschied",
+    "corporate": "Firmenveranstaltungen",
+    "others": "Sonstiges"
+  },
   "contactUs": {
     "contactUs": "Kontakt & Reservierung",
     "contactUsQuote": "Reservierungsanfragen, Gruppenreservierungen, Junggesellenabschiede oder Buchungsanfragen. Wir helfen Ihnen gerne weiter.",
@@ -131,10 +144,11 @@
   },
   "footer": {
     "addressTitle": "Adresse",
-    "addressValue": "Crystal Club & Lounge Sandbühlstrasse 6 8604 Volketswil Schweiz",
+    "addressValue": "Crystal Club & Lounge Sandbühlstrasse 68604 Volketswil Schweiz",
     "quickLinks": "Direktlinks",
     "home": "Heim",
     "rent": "Bars mieten",
+    "events": "Veranstaltungen",
     "blogs": "Blogs",
     "entrance": "Eingang",
     "gallery": "Galerie",

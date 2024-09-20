@@ -1,0 +1,76 @@
+.blogContents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 10px;
+  background-image: url("../../assets/Images/img7.JPG");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.blogContents::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.blogContents > * {
+  position: relative;
+  z-index: 2;
+}
+
+.blogContents h3 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.blogContents .card {
+  width: 18rem;
+  height: 27rem;
+  background: rgba(255, 255, 255, 0.59);
+  margin-top: 30px;
+}
+
+.blogContents .card button {
+  color: black;
+  padding: 5px 30px;
+  border: 1px solid black;
+  border-radius: 9px;
+  margin: 10px;
+}
+
+.blogContents .card button:hover {
+  background: black;
+  border: 1px solid white;
+  color: white;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.blogContents .row .mb-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

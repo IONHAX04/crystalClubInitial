@@ -86,6 +86,12 @@ export default function Footer() {
                   </Nav.Link>
                   <Nav.Link
                     className="text-lg text-white hover:text-yellow-500"
+                    onClick={() => handleNavigate("/events")}
+                  >
+                    {t("footer.events")}
+                  </Nav.Link>
+                  <Nav.Link
+                    className="text-lg text-white hover:text-yellow-500"
                     onClick={(e) => {
                       e.preventDefault();
                       const newLang = currentLang === "en" ? "de" : "en";

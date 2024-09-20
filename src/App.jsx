@@ -13,6 +13,8 @@ import Jobs from "./components/09-Jobs/Jobs";
 import Footer from "./components/10-Footer/Footer";
 import Discover from "./components/10-Discover/Discover";
 import Contact from "./components/11-ContactUs/Contact";
+import Rent from "./components/13-Rent/Rent";
+import Events from "./components/14-Events/Events";
 
 import TextParallaxContentExample from "./components/Example/Example";
 
@@ -21,6 +23,7 @@ import "./App.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Blogs from "./components/12-Blogs/Blogs";
 
 export default function App() {
   useEffect(() => {
@@ -51,7 +54,10 @@ export default function App() {
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/join" element={<Join />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/rent" element={<Rent />} />
           <Route path="/drinks" element={<Drinks />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/contactUs" element={<Contact />} />
           <Route path="/example" element={<TextParallaxContentExample />} />
         </Routes>
@@ -72,14 +78,7 @@ export default function App() {
             target="_blank"
             style={{ background: "transparent", backdropFilter: "blur 2rem" }}
           >
-            <img
-              src={whatsApp}
-              className="whatsAppImage"
-              alt="WhatsApp"
-              style={{
-                background: "transparent",
-              }}
-            />
+            <img src={whatsApp} className="whatsAppImage" alt="WhatsApp" />
           </a>
         </div>
       </div>

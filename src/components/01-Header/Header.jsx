@@ -5,7 +5,9 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import { AnimatePresence, motion } from "framer-motion";
 
-import logo from "../../assets/Logo/logo-black.png";
+import logo from "../../assets/Logo/logo-red.png";
+
+import "./Header.css";
 
 export default function Header() {
   const { t } = useTranslation("global");
@@ -22,12 +24,13 @@ export default function Header() {
     { title: t("footer.experience"), href: "/experience" },
     { title: t("footer.entrance"), href: "/entrance" },
     { title: t("footer.discoverClub"), href: "/discover" },
-    { title: t("footer.gallery"), href: "/gallery" },
+    // { title: t("footer.gallery"), href: "/gallery" },
+    { title: t("footer.events"), href: "/events" },
     { title: t("footer.girls"), href: "/girls" },
-    // { title: t("footer.rent"), href: "/rent " },
+    { title: t("footer.rent"), href: "/rent " },
     { title: t("footer.menu"), href: "/drinks" },
     { title: t("footer.jobs"), href: "/jobs" },
-    // { title: t("footer.blogs"), href: "/blog" },
+    { title: t("footer.blogs"), href: "/blog" },
     { title: t("footer.contactUs"), href: "/contactUs" },
     // { title: "Translate", href: "/" },
   ];
@@ -109,19 +112,16 @@ export default function Header() {
 
   return (
     <div>
-      <header>
+      <header className="navbarBgImg">
         <nav
           className="flex justify-around item-center py-4 lg:py-4 px-2"
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-evenly",
+            justifyContent: "space-between",
           }}
         >
           <div className="flex items-center gap-[1ch]">
-            {/* <span className="text-lg font-semibold tracking-widest cursor-pointer">
-              Crystal Club Lounge
-            </span> */}
             <img src={logo} height={120} width={120} />
           </div>
           <div className="lg:flex hidden gap-12 text-md text- -400 cursor-pointer">
@@ -135,20 +135,20 @@ export default function Header() {
             <p onClick={() => handleNavigate("/discover")}>
               {t("footer.discoverClub")}
             </p>
-            <p onClick={() => handleNavigate("/gallery")}>
-              {t("footer.gallery")}
+            <p onClick={() => handleNavigate("/events")}>
+              {t("footer.events")}
             </p>
             <p onClick={() => handleNavigate("/girls")}>{t("footer.girls")}</p>
-            {/* <p onClick={() => handleNavigate("/rent")}>{t("footer.rent")}</p> */}
+            <p onClick={() => handleNavigate("/rent")}>{t("footer.rent")}</p>
             <p onClick={() => handleNavigate("/drinks")}>{t("footer.menu")}</p>
             <p onClick={() => handleNavigate("/jobs")}>{t("footer.jobs")}</p>
-            {/* <p onClick={() => handleNavigate("/blogs")}>{t("footer.blogs")}</p> */}
+            <p onClick={() => handleNavigate("/blogs")}>{t("footer.blogs")}</p>
             <p onClick={() => handleNavigate("/contactUs")}>
               {t("footer.contactUs")}
             </p>
           </div>
           <div
-            className="cursor-pointer pt-px lg:hidden text-md text-black"
+            className="cursor-pointer pt-px lg:hidden text-md text-white"
             onClick={toggleMenu}
           >
             Menu

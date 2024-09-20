@@ -1,20 +1,11 @@
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 import "./Contact.css";
-import Header from "../01-Header/Header";
 
 export default function Contact() {
   const { t } = useTranslation("global");
-  const navigate = useNavigate();
-
-  const handleNavigate = (path) => {
-    navigate(path);
-    window.scrollTo(0, 0);
-  };
 
   return (
     <div className="contactUs">
-      {/* <Header /> */}
       <section id="contact" className="contact section col-lg-7">
         <div className="container sectionTitle" data-aos="fade-up">
           <h2>{t("contactUs.contactUs")}</h2>
@@ -29,7 +20,7 @@ export default function Contact() {
               style={{ width: "100%", height: "300px", borderRadius: "7px" }}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.4871976324384!2d8.676654276436285!3d47.3829262711702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa3bb2cf00001%3A0x2ffa1cb10914c7e!2sCrystal%20Lounge%20Club%20Gmbh!5e0!3m2!1sen!2sin!4v1726635742447!5m2!1sen!2sin"
               frameBorder="0"
-              allowfullscreen=""
+              allowFullScreen=""
             ></iframe>
           </div>
 

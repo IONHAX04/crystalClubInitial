@@ -116,6 +116,19 @@
     "paymentThree": "Credit cards",
     "description": "Our approach focuses on understanding your needs and offering practical solutions. From personal advice to practical support."
   },
+  "rentBar": {
+    "rentOurBar": "Rent Our Bar",
+    "rentOne": "Host your next special event at Crystal Club & Lounge, the perfect venue for unforgettable celebrations. Whether it's a birthday, bachelor party, or corporate gathering, our club offers a unique blend of elegance, exotic entertainment, and a premium selection of drinks.",
+    "rentTwo": "Ready to plan your event? Simply fill out the form below to inquire about renting our bar, and we'll help create an extraordinary night for you and your guests. ",
+    "formTitle": "Book Your Bar here !",
+    "eventDate": "Event Date & Time",
+    "numberOfPerson": "Number of Persons",
+    "eventType": "Event Type",
+    "birthDay": "Birthday",
+    "bachelor": "Bachelor's Party",
+    "corporate": "Corporate Events",
+    "others": "Others"
+  },
   "contactUs": {
     "contactUs": "Contact & Reservations",
     "contactUsQuote": "Requests for reservations, group reservations, bachelor parties or booking inquiries. We are happy to help you.",
@@ -131,10 +144,11 @@
   },
   "footer": {
     "addressTitle": "Address",
-    "addressValue": "Crystal Club & Lounge Sandbuehlstrasse 6 8604 Volketswil Switzerland",
+    "addressValue": "Crystal Club & Lounge Sandbuehlstrasse 68604 Volketswil Switzerland",
     "quickLinks": "Quick Links",
     "home": "Home",
     "rent": "Rent Bars",
+    "events": "Events",
     "blogs": "Blogs",
     "entrance": "Entrance",
     "gallery": "Gallery",

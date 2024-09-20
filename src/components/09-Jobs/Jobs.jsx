@@ -51,7 +51,7 @@ export default function Jobs() {
 
     console.log(data);
 
-    const mailtoLink = `mailto:info@movenpack.ch?subject=Contact Request from ${data.name}&body=
+    const mailtoLink = `mailto:info@crystalclub.ch?subject=Contact Request from ${data.name}&body=
     Dear Movenpack Team,%0D%0A%0D%0A
     I would like to get in touch with you regarding the following:%0D%0A%0D%0A
     Name: ${data.name}%0D%0A
