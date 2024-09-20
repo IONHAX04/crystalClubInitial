@@ -78,7 +78,6 @@ export default function App() {
               alt="WhatsApp"
               style={{
                 background: "transparent",
-                filter: "drop-shadow(10px 7px 10px #f76c45)",
               }}
             />
           </a>
