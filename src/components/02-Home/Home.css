@@ -1,110 +1,75 @@
-.homePageContx {
+/* Container for the home page */
+.homeContainer {
   position: relative;
+  min-height: 100vh;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 120px 10px;
-  background-image: url("../../assets/Images/img2.JPG");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 100%;
+  padding-top: 150px 0px;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.contentOne {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 120px 10px;
-  background-image: url("../../assets/Girls/image43.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.contentTwo {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 120px 10px;
-  background-image: url("../../assets/Girls/image14.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.homePageContx::before,
-.contentOne::before,
-.contentTwo::before {
-  content: "";
-  position: absolute;
+/* Fixed background video */
+.backgroundVideo {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 
-.homePageContx > *,
-.contentOne > *,
-.contentTwo > * {
+/* Scrollable content */
+.contentContainer {
   position: relative;
   z-index: 1;
+  padding: 2rem;
+  color: white;
+  overflow-y: scroll;
+  max-width: 1200px;
+  margin-top: 120px;
 }
 
-.homePageContents .introContents {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
-  justify-content: center;
-  text-align: justify;
-}
-
-.homePageContents {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background: transparent;
-  padding: 50px 0px;
-}
-
-.homePageContents .introContents h2 {
-  font-size: 35px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center !important;
-  color: #202020;
-  padding-bottom: 30px;
-}
-
-.homePageContents .introContents p {
-  font-size: 18px;
-  padding-bottom: 35px;
-}
-
-.homePageContents .testimonialContents .testimonials h5 {
-  font-size: 20px;
-  padding: 10px;
-}
-
-.homePageContents .testimonialContents .testimonials p {
-  font-size: 22px;
+.contentSection {
+  margin-bottom: 3rem;
   text-align: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentSection h1 {
+  font-size: 35px;
+  padding: 30px 5px;
+}
+
+.contentSection h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0px 5px 30px 5px;
+}
+
+.contentSection p {
+  padding: 10px 0px;
+  font-size: 20px;
+}
+
+.contentSection .contactButton,
+.discoverButton {
+  border: 1px solid white;
+  padding: 15px 30px;
+  border-radius: 7px;
+  font-weight: bold;
+  margin: 20px 5px;
+}
+
+.contentSection h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 30px 0px;
 }

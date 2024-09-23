@@ -107,6 +107,7 @@
   visibility: visible;
   opacity: 1;
   transform: scale(1);
+  z-index: 999;
 }
 
 .model img {
