@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 120px 10px; */
+  padding: 120px 10px;
   background-image: url("../../assets/Images/img2.JPG");
   background-size: cover;
   background-position: center;
@@ -21,7 +21,23 @@
   align-items: center;
   justify-content: center;
   padding: 120px 10px;
-  background-image: url("../../assets/Images/img6.JPG");
+  background-image: url("../../assets/Girls/image43.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.contentTwo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 10px;
+  background-image: url("../../assets/Girls/image14.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -31,7 +47,8 @@
 }
 
 .homePageContx::before,
-.contentOne::before {
+.contentOne::before,
+.contentTwo::before {
   content: "";
   position: absolute;
   top: 0;
@@ -43,7 +60,8 @@
 }
 
 .homePageContx > *,
-.contentOne > * {
+.contentOne > *,
+.contentTwo > * {
   position: relative;
   z-index: 1;
 }

@@ -14,6 +14,27 @@ import img7 from "../../assets/Discover/clubSeven.JPG";
 import img8 from "../../assets/Discover/clubEight.JPG";
 import img9 from "../../assets/Discover/clubNine.JPG";
 import img10 from "../../assets/Discover/clubTen.JPG";
+import img11 from "../../assets/Discover/clubEleven.JPG";
+import img12 from "../../assets/Discover/clubTwelve.JPG";
+import img13 from "../../assets/Discover/clubThirteen.JPG";
+import img14 from "../../assets/Discover/clubFourteen.JPG";
+import img15 from "../../assets/Discover/clubFifteen.JPG";
+import img16 from "../../assets/Discover/clubSixteen.JPG";
+import img17 from "../../assets/Discover/clubSeventeen.JPG";
+import img18 from "../../assets/Discover/clubEighteen.JPG";
+import img19 from "../../assets/Discover/clubNineteen.JPG";
+import img20 from "../../assets/Discover/discover.JPG";
+import img21 from "../../assets/Discover/heartOne.JPG";
+import img22 from "../../assets/Discover/lamp.JPG";
+import img23 from "../../assets/Discover/lampOne.JPG";
+import img24 from "../../assets/Discover/lampTwo.JPG";
+import img25 from "../../assets/Discover/lightOne.JPG";
+import img26 from "../../assets/Discover/lightTwo.JPG";
+import img27 from "../../assets/Discover/mirror.JPG";
+import img28 from "../../assets/Discover/privateDance.JPG";
+import img29 from "../../assets/Discover/room.JPG";
+import img30 from "../../assets/Discover/strip.JPG";
+import img31 from "../../assets/Discover/table.JPG";
 
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -63,6 +84,90 @@ export default function Gallery() {
     {
       id: 10,
       imgSrc: img10,
+    },
+    {
+      id: 11,
+      imgSrc: img11,
+    },
+    {
+      id: 12,
+      imgSrc: img12,
+    },
+    {
+      id: 13,
+      imgSrc: img13,
+    },
+    {
+      id: 14,
+      imgSrc: img14,
+    },
+    {
+      id: 15,
+      imgSrc: img15,
+    },
+    {
+      id: 16,
+      imgSrc: img16,
+    },
+    {
+      id: 17,
+      imgSrc: img17,
+    },
+    {
+      id: 18,
+      imgSrc: img18,
+    },
+    {
+      id: 19,
+      imgSrc: img19,
+    },
+    {
+      id: 20,
+      imgSrc: img20,
+    },
+    {
+      id: 21,
+      imgSrc: img21,
+    },
+    {
+      id: 22,
+      imgSrc: img22,
+    },
+    {
+      id: 23,
+      imgSrc: img23,
+    },
+    {
+      id: 24,
+      imgSrc: img24,
+    },
+    {
+      id: 25,
+      imgSrc: img25,
+    },
+    {
+      id: 26,
+      imgSrc: img26,
+    },
+    {
+      id: 27,
+      imgSrc: img27,
+    },
+    {
+      id: 28,
+      imgSrc: img28,
+    },
+    {
+      id: 29,
+      imgSrc: img29,
+    },
+    {
+      id: 30,
+      imgSrc: img30,
+    },
+    {
+      id: 31,
+      imgSrc: img31,
     },
   ];
 

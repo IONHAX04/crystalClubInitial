@@ -114,9 +114,9 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        setHeaderBg("rgb(0 0 0 / 84%)"); // Change to black when scrolled 100px
+        setHeaderBg("rgb(0 0 0 / 84%)");
       } else {
-        setHeaderBg("transparent"); // Transparent when at the top
+        setHeaderBg("transparent");
       }
     };
 
@@ -183,11 +183,11 @@ export default function Header() {
               initial="initial"
               animate="animate"
               exit="exit"
-              style={{ zIndex: "100", background: "black" }}
+              style={{ zIndex: "100" }}
               // style={{ backgroundColor: "#1E293B" }}
               className="fixed left-0 top-0 w-full h-screen origin-top text-black p-10 navbarBgImg"
             >
-              <div className="flex h-full flex-col">
+              <div className="flex h-full flex-col w-[100%]">
                 <div className="flex justify-between">
                   <h1 className="text-lg text-white">Crystal Club Lounge</h1>
                   <p

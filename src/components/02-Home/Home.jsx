@@ -96,10 +96,12 @@ export default function Home() {
 
   const ExampleContent = ({ title, paragraphs, buttonText, onClick }) => (
     <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-      <h2 className="col-span-1 text-3xl font-bold md:col-span-4">{title}</h2>
+      <h2 className="col-span-1 text-3xl text-[white] font-bold md:col-span-4">
+        {title}
+      </h2>
       <div className="col-span-1 md:col-span-8">
         {paragraphs.map((paragraph, index) => (
-          <p key={index} className="mb-8 text-xl text-neutral-600 md:text-2xl">
+          <p key={index} className="mb-8 text-xl text-[white] md:text-2xl">
             {paragraph}
           </p>
         ))}
@@ -159,10 +161,12 @@ export default function Home() {
         imgUrl={img1}
         heading="Crystal Club & Lounge"
       >
-        <ExampleContent
-          {...contentData1}
-          onClick={() => handleNavigate("/contactUs")}
-        />
+        <div className="contentOne">
+          <ExampleContent
+            {...contentData1}
+            onClick={() => handleNavigate("/contactUs")}
+          />
+        </div>
       </TextParallaxContent>
 
       <TextParallaxContent
@@ -170,10 +174,12 @@ export default function Home() {
         imgUrl={img1}
         heading={t("home.never")}
       >
-        <ExampleContent
-          {...contentData2}
-          onClick={() => handleNavigate("/discover")}
-        />
+        <div className="contentTwo">
+          <ExampleContent
+            {...contentData2}
+            onClick={() => handleNavigate("/discover")}
+          />
+        </div>
       </TextParallaxContent>
     </div>
   );
