@@ -3,8 +3,16 @@ import "./Home.css";
 import img1 from "../../assets/Images/img4.JPG";
 import video from "../../assets/Video/introVide.mp4";
 
+import { useNavigate } from "react-router-dom";
+
 export default function Home() {
   const { t } = useTranslation("global");
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="homeContainer">
@@ -44,6 +52,7 @@ export default function Home() {
             className="contactButton"
             data-aos="fade-in"
             data-aos-delay="200"
+            onClick={handleNavigate("/contactUs")}
           >
             {t("discoverClub.contactUs")}
           </button>
@@ -69,6 +78,7 @@ export default function Home() {
             data-aos="fade-in"
             data-aos-delay="200"
             className="discoverButton"
+            onClick={handleNavigate("/discover")}
           >
             {t("home.discoverClub")}
           </button>
