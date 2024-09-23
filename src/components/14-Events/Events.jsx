@@ -8,6 +8,8 @@ import blogImg2 from "../../assets/Images/img5.JPG";
 import blogImg3 from "../../assets/Discover/clubSeven.JPG";
 import blogImg4 from "../../assets/Discover/clubEight.JPG";
 
+import Header from "../01-Header/Header";
+
 const blogData = [
   {
     id: 1,
@@ -60,6 +62,7 @@ export default function Events() {
     <div>
       <div className="blogContentsPage">
         <div className="blogContents">
+          {/* <Header /> */}
           <h3>{t("footer.events")}</h3>
           <div className="divider"></div>
 

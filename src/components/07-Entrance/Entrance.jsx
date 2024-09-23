@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 import "./Entrance.css";
+import Header from "../01-Header/Header";
 
 export default function Entrance() {
   const { t } = useTranslation("global");
@@ -16,6 +17,7 @@ export default function Entrance() {
     <div>
       <div className="entranceClubContent">
         <div className="entranceClub">
+          {/* <Header /> */}
           <h3>{t("entrance.entranceTitle")}</h3>
           <div className="divider"></div>
           <h4>{t("entrance.crystalDollar")}</h4>

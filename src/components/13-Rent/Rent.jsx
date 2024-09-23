@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Col, Row, Form, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import Header from "../01-Header/Header";
 
 import "./Rent.css";
 export default function Rent() {
@@ -62,6 +63,7 @@ export default function Rent() {
     <div className="rentOurBar">
       <div className="rentBar">
         <div className="rentBarCont col-lg-7">
+          {/* <Header /> */}
           <h3>{t("rentBar.rentOurBar")}</h3>
           <div className="divider"></div>
           <p>{t("rentBar.rentOne")}</p>

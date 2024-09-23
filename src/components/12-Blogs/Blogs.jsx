@@ -3,6 +3,9 @@ import "./Blogs.css";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
+import Header from "../01-Header/Header";
+
+
 import blogImg from "../../assets/Discover/privateDance.JPG";
 import blogImg2 from "../../assets/Images/img5.JPG";
 import blogImg3 from "../../assets/Discover/clubSeven.JPG";
@@ -60,6 +63,7 @@ export default function Blogs() {
     <div>
       <div className="blogContentsPage">
         <div className="blogContents">
+          {/* <Header /> */}
           <h3>{t("footer.blogs")}</h3>
           <div className="divider"></div>
 

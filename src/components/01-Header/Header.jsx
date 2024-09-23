@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -11,6 +11,7 @@ import "./Header.css";
 
 export default function Header() {
   const { t } = useTranslation("global");
+  const [headerBg, setHeaderBg] = useState("transparent");
   const navigate = useNavigate();
 
   const handleNavigate = (path) => {
@@ -30,7 +31,7 @@ export default function Header() {
     { title: t("footer.rent"), href: "/rent " },
     { title: t("footer.menu"), href: "/drinks" },
     { title: t("footer.jobs"), href: "/jobs" },
-    { title: t("footer.blogs"), href: "/blog" },
+    { title: t("footer.blogs"), href: "/blogs" },
     { title: t("footer.contactUs"), href: "/contactUs" },
     // { title: "Translate", href: "/" },
   ];
@@ -110,15 +111,36 @@ export default function Header() {
     href: PropTypes.string.isRequired,
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setHeaderBg("rgb(0 0 0 / 84%)"); // Change to black when scrolled 100px
+      } else {
+        setHeaderBg("transparent"); // Transparent when at the top
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div>
-      <header className="navbarBgImg">
+      <header
+        className=""
+        style={{
+          backgroundColor: headerBg,
+          zIndex: "100",
+          position: "fixed",
+          width: "100%",
+        }}
+      >
         <nav
           className="flex justify-around item-center py-4 lg:py-4 px-2"
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
           }}
         >
           <div className="flex items-center gap-[1ch]">
@@ -161,7 +183,7 @@ export default function Header() {
               initial="initial"
               animate="animate"
               exit="exit"
-              style={{ zIndex: "99" }}
+              style={{ zIndex: "100", background: "black" }}
               // style={{ backgroundColor: "#1E293B" }}
               className="fixed left-0 top-0 w-full h-screen origin-top text-black p-10 navbarBgImg"
             >

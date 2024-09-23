@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import Gallery from "../04-Gallery/Gallery";
 import "./Discover.css";
+import Header from "../01-Header/Header";
 
 export default function Discover() {
   const { t } = useTranslation("global");
@@ -16,6 +17,7 @@ export default function Discover() {
     <div>
       <div className="discoverClub">
         <div className="discoverClubIntro">
+          {/* <Header /> */}
           <div className="discoverClubIntroContents col-lg-7">
             <h3 data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.clubTitle")}

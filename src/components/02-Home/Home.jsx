@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-
 import "./Home.css";
 import img1 from "../../assets/Images/img4.JPG";
+import Header from "../01-Header/Header";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -24,6 +24,7 @@ export default function Home() {
     return (
       <div>
         <div className="relative h-[120vh] homePageContx">
+          {/* <Header /> */}
           <StickyImage imgUrl={imgUrl} />
           <OverlayCopy heading={heading} subheading={subheading} />
         </div>
@@ -54,7 +55,7 @@ export default function Home() {
           scale,
         }}
         ref={targetRef}
-        className="sticky z-4 overflow-hidden rounded-3xl"
+        className="sticky overflow-hidden rounded-3xl"
       >
         <motion.div
           className="absolute inset-0 bg-neutral-950/70"

@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next";
 import "./Contact.css";
+import Header from "../01-Header/Header";
 
 export default function Contact() {
   const { t } = useTranslation("global");
 
   return (
     <div className="contactUs">
+      {/* <Header /> */}
       <section id="contact" className="contact section col-lg-7">
         <div className="container sectionTitle" data-aos="fade-up">
           <h2>{t("contactUs.contactUs")}</h2>

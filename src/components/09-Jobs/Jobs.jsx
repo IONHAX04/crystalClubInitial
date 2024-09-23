@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 import { Col, Form, Row, Button } from "react-bootstrap";
 
+import Header from "../01-Header/Header";
+
 import "./Jobs.css";
 import { useState } from "react";
 
@@ -68,6 +70,7 @@ export default function Jobs() {
   return (
     <div className="joinUs">
       <section className="joinUsContents">
+        {/* <Header /> */}
         <div className="container sectionTitle">
           <Col lg={7}>
             <h2>{t("join.joinUs")}</h2>

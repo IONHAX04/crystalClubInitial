@@ -4,8 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 120px 10px;
-  background-image: url("../../assets/Images/img7.JPG");
+  /* padding: 120px 10px; */
+  background-image: url("../../assets/Images/img2.JPG");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -45,7 +45,7 @@
 .homePageContx > *,
 .contentOne > * {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .homePageContents .introContents {

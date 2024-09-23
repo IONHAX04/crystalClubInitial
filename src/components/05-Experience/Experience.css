@@ -96,7 +96,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.842);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -109,7 +109,7 @@
   font-size: 30px;
   color: white;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: bold;
   padding: 20px;
 }
 
@@ -126,6 +126,7 @@
   border: 1px solid white;
   padding: 10px 20px;
   font-size: 19px;
+  font-weight: bold;
   margin: 40px 0px;
   border-radius: 7px;
 }

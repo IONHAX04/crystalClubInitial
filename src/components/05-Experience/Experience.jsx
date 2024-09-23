@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
+import Header from "../01-Header/Header";
+
 import "./Experience.css";
 
 export default function Experience() {
@@ -15,6 +17,7 @@ export default function Experience() {
   return (
     <div>
       <div className="experienceOfClub">
+        {/* <Header /> */}
         <div className="clubExperience">
           <h3>{t("experience.crystalExperienceTitle")}</h3>
 
