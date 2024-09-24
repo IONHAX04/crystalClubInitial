@@ -33,7 +33,11 @@ export default function Home() {
         </section>
 
         <section className="contentSection">
-          <h2 data-aos="fade-in" data-aos-delay="200">
+          <h2
+            data-aos="fade-in"
+            data-aos-delay="200"
+            style={{ textTransform: "uppercase" }}
+          >
             {t("home.aboutOurClub")}
           </h2>
           <p data-aos="fade-in" data-aos-delay="200">
