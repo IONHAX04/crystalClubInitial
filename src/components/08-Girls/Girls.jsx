@@ -396,7 +396,7 @@ export default function Girls() {
         {/* <Header /> */}
         <h3>{t("footer.girls")}</h3>
         <div className="divider"></div>
-        <div className="girlsContainer">
+        {/* <div className="girlsContainer">
           {images.slice(0, visibleCount).map((item, index) => (
             <div
               className="pics"
@@ -420,7 +420,7 @@ export default function Girls() {
               Show More
             </button>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

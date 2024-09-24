@@ -89,7 +89,7 @@
     "contSix": "Answer the questions as honestly as you can—whether brief or detailed, there’s no right or wrong. We’re just looking to get a sense of who you are. Don’t be afraid to show your humor, personality, or unique perspective. ",
     "contSeven": "If we think you’d be a good fit, we’ll contact you for an interview, followed by a trial period when a position opens up. We don't hold auditions.",
     "contEight": "You’ll hear from us via email within 7 days. ",
-    "contNine": "For non-entertainer inquiries, please send your CV and a recent photo to crystalclub@gmail.com",
+    "contNine": "For non-entertainer inquiries, please send your CV and a recent photo to info@crystalclub.ch",
     "fillForm": "Fill the Form",
     "personal": "Personal Details",
     "firstName": "First Name",
@@ -139,13 +139,13 @@
     "message": "Message",
     "submit": "Submit",
     "ourOpeningHrs": "Our opening hours",
-    "timeOne": "Thurs. 8:00 A.M. to 1:00 A.M.",
-    "timeTwo": "Fri. 8:00 A.M. to 4:00 A.M.",
-    "timeThree": "Sat. 9:00 A.M. to 4:00 A.M."
+    "timeOne": "Thurs. 20 bis 4Uhr",
+    "timeTwo": "Fri. 21 bis 4Uhr",
+    "timeThree": "Sat. 21 bis 4Uhr"
   },
   "footer": {
     "addressTitle": "Address",
-    "addressValue": "Crystal Club & Lounge Sandbuehlstrasse 68604 Volketswil Switzerland",
+    "addressValue": "Crystal Club & Lounge, Sandbüelstrasse 6, Volketswil 8604, Switzerland",
     "quickLinks": "Quick Links",
     "home": "Home",
     "rent": "Rent Bars",

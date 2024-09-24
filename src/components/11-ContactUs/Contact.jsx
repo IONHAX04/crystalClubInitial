@@ -48,7 +48,7 @@ export default function Contact() {
                 <i className="icon bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>{t("contactUs.email")}</h3>
-                  <p>example@gmail.com</p>
+                  <p>info@crystalclub.ch</p>
                 </div>
               </div>
             </div>

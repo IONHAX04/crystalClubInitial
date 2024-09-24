@@ -38,7 +38,7 @@ export default function Footer() {
               flexDirection: "column",
             }}
           >
-            <Row style={{ justifyContent: "space-between" }}>
+            <Row style={{ justifyContent: "center" }}>
               <Col md={4} lg={3} className="mb-4">
                 <h3 className="text-white text-xl mb-3">
                   {t("footer.addressTitle")}
@@ -49,7 +49,7 @@ export default function Footer() {
                   </Nav.Link>
                 </Nav>
               </Col>
-              <Col md={4} lg={3} className="mb-4">
+              <Col md={4} lg={2} className="mb-4">
                 <h3 className="text-white text-xl mb-3">
                   {t("footer.quickLinks")}
                 </h3>
@@ -66,12 +66,12 @@ export default function Footer() {
                   >
                     {t("footer.entrance")}
                   </Nav.Link>
-                  <Nav.Link
+                  {/* <Nav.Link
                     className="text-lg text-white hover:text-yellow-500"
                     onClick={() => handleNavigate("/gallery")}
                   >
                     {t("footer.gallery")}
-                  </Nav.Link>
+                  </Nav.Link> */}
                   <Nav.Link
                     className="text-lg text-white hover:text-yellow-500"
                     onClick={() => handleNavigate("/girls")}
@@ -108,7 +108,7 @@ export default function Footer() {
                   </Nav.Link> */}
                 </Nav>
               </Col>
-              <Col md={4} lg={3} className="mb-4">
+              <Col md={4} lg={2} className="mb-4">
                 <h3 className="text-white text-xl mb-3">
                   {t("footer.aboutUs")}
                 </h3>
