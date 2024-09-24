@@ -17,13 +17,13 @@ export default function Home() {
   return (
     <div className="homeContainer">
       {/* Background video */}
-      <video autoPlay muted loop playsInline className="backgroundVideo">
+      {/* <video autoPlay muted loop playsInline className="backgroundVideo">
         <source src={video} type="video/mp4" />
-      </video>
+      </video> */}
 
       {/* Scrollable content */}
       <div className="contentContainer">
-        <section className="contentSection">
+        <section className="contentSection welcomeContent">
           <h1 data-aos="fade-in" data-aos-delay="200">
             {t("home.welcome")}
           </h1>
@@ -32,7 +32,7 @@ export default function Home() {
           </h2>
         </section>
 
-        <section className="contentSection">
+        <section className="contentSection welcomeIntro">
           <h2
             data-aos="fade-in"
             data-aos-delay="200"
@@ -56,13 +56,13 @@ export default function Home() {
             className="contactButton"
             data-aos="fade-in"
             data-aos-delay="200"
-            onClick={handleNavigate("/contactUs")}
+            onClick={() => handleNavigate("/contactUs")}
           >
             {t("discoverClub.contactUs")}
           </button>
         </section>
 
-        <section className="contentSection">
+        <section className="contentSection qualityContent">
           <h1 data-aos="fade-in" data-aos-delay="200">
             {t("home.quality")}
           </h1>
@@ -71,18 +71,18 @@ export default function Home() {
           </h2>
         </section>
 
-        <section className="contentSection">
+        <section className="contentSection aboutUsContent">
           <h3 data-aos="fade-in" data-aos-delay="200">
             {t("home.aboutUs")}
           </h3>
-          <p data-aos="fade-in" data-aos-delay="200">
+          <p className="col-lg-6" data-aos="fade-in" data-aos-delay="200">
             {t("home.aboutUsCont")}
           </p>
           <button
             data-aos="fade-in"
             data-aos-delay="200"
             className="discoverButton"
-            onClick={handleNavigate("/discover")}
+            onClick={() => handleNavigate("/discover")}
           >
             {t("home.discoverClub")}
           </button>

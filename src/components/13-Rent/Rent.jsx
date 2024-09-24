@@ -11,8 +11,8 @@ export default function Rent() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
+    firstName: "",
+    lastName: "",
     phone: "",
     eventDate: "",
     numberOfGuests: "",
@@ -35,17 +35,16 @@ export default function Rent() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log("Form Data Submitted:", formData);
-
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData.entries());
 
+    console.log("Form Data Submitted:", formData);
     console.log(data);
 
     const mailtoLink = `mailto:info@crystalclub.ch?subject=Bar Rental Request from ${data.firstname} ${data.lastname}&body=
     Dear Crystal Club Team,%0D%0A%0D%0A
     I am interested in renting the bar for an event and would like to provide the following details:%0D%0A%0D%0A
-    Name: ${data.firstname} ${data.lastname}%0D%0A
+    Name: ${data.firstName} ${data.lastName}%0D%0A
     Phone: ${data.phone}%0D%0A%0D%0A
     Event Date: ${data.eventDate}%0D%0A
     Number of Guests: ${data.numberOfGuests}%0D%0A
@@ -54,7 +53,7 @@ export default function Rent() {
     ${data.additionalDetails}%0D%0A%0D%0A
     Please feel free to contact me for any further information.%0D%0A%0D%0A
     Best regards,%0D%0A
-    ${data.firstname} ${data.lastname}`;
+    ${data.firstName} ${data.lastName}`;
 
     window.location.href = mailtoLink;
   };
@@ -103,7 +102,7 @@ export default function Rent() {
 
                 <Col md={6}>
                   <Form.Control
-                    type="text"
+                    type="number"
                     name="phone"
                     placeholder={t("join.phoneNumber")}
                     required

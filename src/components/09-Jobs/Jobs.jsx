@@ -17,20 +17,17 @@ export default function Jobs() {
     lastName: "",
     phone: "",
     email: "",
-    streetFrom: "",
-    cityFrom: "",
-    roomsFrom: "",
-    floorFrom: "",
-    streetTo: "",
-    cityTo: "",
-    roomsTo: "",
-    floorTo: "",
-    driver: "",
-    additional: "",
-    materials: "",
-    fromDate: "",
-    toDate: "",
-    message: "",
+    instagram: "",
+    twitter: "",
+    tiktok: "",
+    onlyFans: "",
+    aboutYou: "",
+    doneYes: "",
+    guest: "",
+    superPower: "",
+    funnyStory: "",
+    expectSalary: "",
+    heardAboutThis: "",
   });
 
   const handleNavigate = (path) => {
@@ -51,18 +48,32 @@ export default function Jobs() {
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData.entries());
 
-    console.log(data);
-
-    const mailtoLink = `mailto:info@crystalclub.ch?subject=Contact Request from ${data.name}&body=
-    Dear Movenpack Team,%0D%0A%0D%0A
-    I would like to get in touch with you regarding the following:%0D%0A%0D%0A
-    Name: ${data.name}%0D%0A
-    Email: ${data.email}%0D%0A%0D%0A
-    Message:%0D%0A
-    ${data.message}%0D%0A%0D%0A
-    Please feel free to reach out to me at your earliest convenience.%0D%0A%0D%0A
-    Best regards,%0D%0A
-    ${data.name}`;
+    const mailtoLink = `mailto:info@crystalclub.ch?subject=Job Application from ${data.firstName} ${data.lastName}&body=
+      Dear Crystal Club Team,%0D%0A%0D%0A
+      I am interested in joining your club for the job, and I would like to submit my details for consideration.%0D%0A%0D%0A
+      **Personal Details:**%0D%0A
+      - Name: ${data.firstName} ${data.lastName}%0D%0A
+      - Email: ${data.email}%0D%0A
+      - Phone: ${data.phone}%0D%0A%0D%0A
+  
+      **Social Media:**%0D%0A
+      - Instagram: ${data.instagram}%0D%0A
+      - Twitter: ${data.twitter}%0D%0A
+      - Tiktok: ${data.tiktok}%0D%0A
+      - OnlyFans: ${data.onlyFans}%0D%0A%0D%0A
+  
+      **Additional Details:**%0D%0A
+      - About Me: ${data.aboutYou}%0D%0A
+      - Done Before (If yes, where and when): ${data.doneYes}%0D%0A
+      - Guest relationships: ${data.guest}%0D%0A
+      - Superpower: ${data.superPower}%0D%0A
+      - Funny Story: ${data.funnyStory}%0D%0A
+      - Expected Salary: ${data.expectSalary}%0D%0A
+      - How did you hear about us?: ${data.heardAboutThis}%0D%0A%0D%0A
+  
+      Please consider my request for joining Crystal Club. I look forward to your response.%0D%0A%0D%0A
+      Best regards,%0D%0A
+      ${data.firstName} ${data.lastName}`;
 
     window.location.href = mailtoLink;
   };
@@ -162,7 +173,7 @@ export default function Jobs() {
                 <Col md={6}>
                   <Form.Control
                     type="text"
-                    name="firstName"
+                    name="instagram"
                     placeholder="Instagram"
                     required
                     onChange={handleChange}
@@ -172,7 +183,7 @@ export default function Jobs() {
                 <Col md={6}>
                   <Form.Control
                     type="text"
-                    name="lastName"
+                    name="twitter"
                     placeholder="Twitter"
                     required
                     onChange={handleChange}
@@ -182,7 +193,7 @@ export default function Jobs() {
                 <Col md={6}>
                   <Form.Control
                     type="text"
-                    name="phone"
+                    name="tiktok"
                     placeholder="Tiktok"
                     required
                     onChange={handleChange}
@@ -192,9 +203,8 @@ export default function Jobs() {
                 <Col md={6}>
                   <Form.Control
                     type="text"
-                    name="email"
-                    placeholder="Only Fans"
-                    required
+                    name="onlyFans"
+                    placeholder="Only Fans (Optional)"
                     onChange={handleChange}
                   />
                 </Col>
@@ -208,7 +218,7 @@ export default function Jobs() {
                   <Form.Control
                     as="textarea"
                     rows={5}
-                    name="message"
+                    name="aboutYou"
                     placeholder={t("join.aboutYou")}
                     onChange={handleChange}
                   />
@@ -218,7 +228,7 @@ export default function Jobs() {
                   <Form.Control
                     as="textarea"
                     rows={5}
-                    name="message"
+                    name="doneYes"
                     placeholder={t("join.doneYes")}
                     onChange={handleChange}
                   />
@@ -228,7 +238,7 @@ export default function Jobs() {
                   <Form.Control
                     as="textarea"
                     rows={5}
-                    name="message"
+                    name="guest"
                     placeholder={t("join.guest")}
                     onChange={handleChange}
                   />
@@ -238,7 +248,7 @@ export default function Jobs() {
                   <Form.Control
                     as="textarea"
                     rows={5}
-                    name="message"
+                    name="superPower"
                     placeholder={t("join.superPower")}
                     onChange={handleChange}
                   />
@@ -248,13 +258,13 @@ export default function Jobs() {
                   <Form.Control
                     as="textarea"
                     rows={5}
-                    name="message"
+                    name="funnyStory"
                     placeholder={t("join.funnyStory")}
                     onChange={handleChange}
                   />
                 </Col>
 
-                <Col lg={12}>
+                {/* <Col lg={12}>
                   <Form.Control
                     as="textarea"
                     rows={5}
@@ -262,12 +272,12 @@ export default function Jobs() {
                     placeholder={t("join.fileUpload")}
                     onChange={handleChange}
                   />
-                </Col>
+                </Col> */}
 
                 <Col md={6}>
                   <Form.Control
                     type="text"
-                    name="email"
+                    name="expectSalary"
                     placeholder={t("join.expectSalary")}
                     required
                     onChange={handleChange}
@@ -277,7 +287,7 @@ export default function Jobs() {
                 <Col md={6}>
                   <Form.Control
                     type="text"
-                    name="email"
+                    name="heardAboutThis"
                     placeholder={t("join.heardAboutThis")}
                     required
                     onChange={handleChange}

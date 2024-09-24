@@ -169,7 +169,8 @@
 
 .requestParty .requestPartyContents button {
   color: white;
-  background: rgb(120, 0, 0);
+  background: transparent;
+  border: 1px solid white;
   padding: 10px 20px;
   border-radius: 8px;
   align-items: center;

@@ -1,8 +1,40 @@
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import "./Contact.css";
 
 export default function Contact() {
   const { t } = useTranslation("global");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const mailtoLink = `mailto:info@crystalclub.ch?subject=${encodeURIComponent(
+      formData.subject
+    )}&body=Hello Crystal Club Team,%0D%0A%0D%0A
+    You have received a new contact form submission with the following details:%0D%0A%0D%0A
+    **Name:** ${encodeURIComponent(formData.name)}%0D%0A
+    **Email:** ${encodeURIComponent(formData.email)}%0D%0A%0D%0A
+    **Message:** %0D%0A
+    ${encodeURIComponent(formData.message)}%0D%0A%0D%0A
+    Best regards,%0D%0A
+    ${encodeURIComponent(formData.name)}`;
+
+    // Redirect to mail client
+    window.location.href = mailtoLink;
+  };
 
   return (
     <div className="contactUs">
@@ -77,6 +109,7 @@ export default function Contact() {
             className="contactEmailForm"
             data-aos="fade-up"
             data-aos-delay="600"
+            onSubmit={handleSubmit}
           >
             <div className="row gy-4">
               <h4>Email Us</h4>
@@ -87,17 +120,21 @@ export default function Contact() {
                   name="name"
                   className="form-control"
                   placeholder="Your Name"
-                  required=""
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
                 />
               </div>
 
-              <div className="col-md-6 ">
+              <div className="col-md-6">
                 <input
                   type="email"
                   className="form-control"
                   name="email"
                   placeholder="Your Email"
-                  required=""
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -107,7 +144,9 @@ export default function Contact() {
                   className="form-control"
                   name="subject"
                   placeholder="Subject"
-                  required=""
+                  required
+                  value={formData.subject}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -117,7 +156,9 @@ export default function Contact() {
                   name="message"
                   rows="6"
                   placeholder="Message"
-                  required=""
+                  required
+                  value={formData.message}
+                  onChange={handleChange}
                 ></textarea>
               </div>
 
