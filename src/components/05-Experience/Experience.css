@@ -131,6 +131,7 @@
   border-radius: 7px;
 }
 
-.experienceOfClub .bookClubCont .divider {
-  width: 30% !important;
+.clubExperience .divider,
+.bookClubCont .divider {
+  width: 300px !important;
 }

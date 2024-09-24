@@ -55,3 +55,7 @@
   text-align: center;
   padding: 40px 10px;
 }
+
+.rentBarCont .divider {
+  width: 300px !important;
+}

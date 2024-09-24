@@ -133,6 +133,15 @@
   justify-content: center;
 }
 
+.requestParty .requestPartyContents .divider,
+.partyGroup .partyGroupContents .divider,
+.privateDance .privateDanceContents .divider,
+.stripShow .stripShowContents .divider,
+.tableExperience .tableExperienceContents .divider,
+.discoverClubIntro .discoverClubIntroContents .divider {
+  width: 300px !important;
+}
+
 .requestParty .requestPartyContents h3,
 .partyGroup .partyGroupContents h3,
 .privateDance .privateDanceContents h3,

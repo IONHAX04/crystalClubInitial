@@ -37,7 +37,6 @@
   text-transform: uppercase;
 }
 
-
 .girlsContainer {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -147,4 +146,8 @@
   padding: 10px 20px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.girls .divider {
+  width: 300px !important;
 }

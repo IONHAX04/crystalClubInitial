@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import "./Join.css"
+import "./Join.css";
 
 export default function Join() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div></div>;
 }
