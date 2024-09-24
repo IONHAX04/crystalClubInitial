@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "./Home.css";
-import img1 from "../../assets/Images/img4.JPG";
-import video from "../../assets/Video/introVide.mp4";
+import { Helmet } from "react-helmet";
 
 import { useNavigate } from "react-router-dom";
 
@@ -16,6 +15,14 @@ export default function Home() {
 
   return (
     <div className="homeContainer">
+      <Helmet>
+        <title>Home - Crystal Club & Lounge</title>
+        <meta name="description" content="Crystal Club & Lounge." />
+        <meta
+          name="keywords"
+          content="club, crystal club, crystal, home, crystal club home, crystal club and lounge, crystal club and lounge home"
+        />
+      </Helmet>
       {/* Background video */}
       {/* <video autoPlay muted loop playsInline className="backgroundVideo">
         <source src={video} type="video/mp4" />

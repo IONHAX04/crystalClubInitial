@@ -146,7 +146,10 @@ export default function Header() {
           <div className="flex items-center gap-[1ch]">
             <img src={logo} height={120} width={120} />
           </div>
-          <div className="lg:flex hidden gap-12 text-md text-[#fff] cursor-pointer">
+          <div
+            className="lg:flex hidden gap-12 text-md text-[#e3304e] cursor-pointer"
+            style={{ fontWeight: "bold", fontSize: "17px" }}
+          >
             <p onClick={() => handleNavigate("/")}>{t("footer.home")}</p>
             <p onClick={() => handleNavigate("/experience")}>
               {t("footer.experience")}

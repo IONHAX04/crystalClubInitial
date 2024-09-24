@@ -37,10 +37,6 @@
   text-transform: uppercase;
 }
 
-.girls .divider {
-  width: 30% !important;
-  margin-top: 30px;
-}
 
 .girlsContainer {
   -webkit-column-count: 3;

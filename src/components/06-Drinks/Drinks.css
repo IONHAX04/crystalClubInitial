@@ -45,13 +45,6 @@
   font-weight: 500;
 }
 
-.divider {
-  height: 2px;
-  width: 30%;
-  background-color: white;
-  margin: 10px 0px;
-}
-
 .drinkMenuItems button {
   color: white;
   padding: 20px 40px;

@@ -15,3 +15,10 @@
     right: 200;
   }
 }
+
+.divider {
+  height: 2px;
+  width: 50% !important;
+  background-color: white;
+  margin: 10px 0px;
+}

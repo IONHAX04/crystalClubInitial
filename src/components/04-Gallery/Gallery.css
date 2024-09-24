@@ -37,10 +37,6 @@
   text-transform: uppercase;
 }
 
-.gallery .divider {
-  width: 50% !important;
-}
-
 .galleryContainer {
   -webkit-column-count: 3;
   -moz-column-count: 3;

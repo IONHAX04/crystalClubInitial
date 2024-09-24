@@ -11,21 +11,21 @@ import eventImg4 from "../../assets/Discover/clubEight.JPG";
 const eventData = [
   {
     id: 1,
+    title: "Halloween Party",
+    description:
+      "Get ready for a night of spine-chilling fun and eerie excitement at our Halloween Party!",
+    content:
+      "Join us for a terrifyingly good time at our Halloween Party! The club will be transformed into a haunted house filled with spooky decor, eerie lighting, and fog-filled dance floors. Wear your scariest, funniest, or most creative costume and compete in our epic costume contest with amazing prizes for the best outfits. Dance the night away to haunting beats by our live DJ, enjoy special Halloween-themed cocktails, and capture the moment in our ghoulish photo booth. It's going to be a night full of thrills, chills, and unforgettable memories. Get your tickets now and be part of the frightful fun!",
+    img: eventImg2,
+  },
+  {
+    id: 2,
     title: "Upcoming Party Extravaganza",
     description:
       "Join us for an unforgettable night of fun, music, and dance at our upcoming party!",
     content:
       "Get ready for the most exciting party of the year! With top DJs spinning the latest hits, themed decorations, and an electric atmosphere, this event will be the highlight of the season. Book your tickets now and prepare for an evening of non-stop fun with special performances and surprise giveaways!",
     img: eventImg1,
-  },
-  {
-    id: 2,
-    title: "Bachelor Party Bonanza",
-    description:
-      "Host your ultimate bachelor party at our venue with exclusive VIP sections and customized experiences.",
-    content:
-      "Looking for the perfect spot to celebrate your bachelor party? Look no further! We offer VIP sections, personalized drinks, and party packages to make your night unforgettable. Whether you want a laid-back evening with friends or a wild celebration, our venue has everything you need to create the bachelor party of your dreams.",
-    img: eventImg2,
   },
   {
     id: 3,
