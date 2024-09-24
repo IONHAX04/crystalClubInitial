@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import Gallery from "../04-Gallery/Gallery";
 import "./Discover.css";
-import Header from "../01-Header/Header";
 
 export default function Discover() {
   const { t } = useTranslation("global");
@@ -17,7 +16,6 @@ export default function Discover() {
     <div>
       <div className="discoverClub">
         <div className="discoverClubIntro">
-          {/* <Header /> */}
           <div className="discoverClubIntroContents col-lg-7">
             <h3 data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.clubTitle")}
@@ -32,9 +30,6 @@ export default function Discover() {
             </h5>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.clubIntroOne")}
-            </p>
-            <p data-aos="fade-up" data-aos-delay="200">
-              {t("discoverClub.clubIntroTwo")}
             </p>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.clubIntroThree")}
@@ -56,6 +51,9 @@ export default function Discover() {
             ></div>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.tableDanceCont")}
+            </p>
+            <p data-aos="fade-up" data-aos-delay="200">
+              {t("discoverClub.tableDanceContTwo")}
             </p>
           </div>
         </div>
@@ -119,9 +117,6 @@ export default function Discover() {
             </p>
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.request")}
-            </p>
-            <p data-aos="fade-up" data-aos-delay="200">
-              {t("discoverClub.requestDesc")}
             </p>
             <button
               data-aos="fade-up"

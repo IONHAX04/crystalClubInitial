@@ -27,15 +27,15 @@ export default function Experience() {
           <p>{t("experience.peepTime")}</p>
 
           <h4>{t("experience.briefEncounter")}</h4>
-          <p>{t("experience.briefTimeOne")}</p>
+          {/* <p>{t("experience.briefTimeOne")}</p> */}
           <p>{t("experience.briefTimeTwo")}</p>
 
           <h4>{t("experience.partyRoom")}</h4>
-          <p>{t("experience.partyRoomOne")}</p>
+          {/* <p>{t("experience.partyRoomOne")}</p>
           <p>{t("experience.partyRoomTwo")}</p>
           <p>{t("experience.partyRoomTime")}</p>
 
-          <div className="dividerDash"></div>
+          <div className="dividerDash"></div> */}
 
           <p>{t("experience.privateFunRoom")}</p>
           <p>{t("experience.privateFunRoomTime")}</p>
