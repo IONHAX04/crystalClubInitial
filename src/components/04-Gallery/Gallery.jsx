@@ -97,78 +97,78 @@ export default function Gallery() {
       id: 13,
       imgSrc: img13,
     },
-    {
-      id: 14,
-      imgSrc: img14,
-    },
-    {
-      id: 15,
-      imgSrc: img15,
-    },
-    {
-      id: 16,
-      imgSrc: img16,
-    },
-    {
-      id: 17,
-      imgSrc: img17,
-    },
-    {
-      id: 18,
-      imgSrc: img18,
-    },
-    {
-      id: 19,
-      imgSrc: img19,
-    },
-    {
-      id: 20,
-      imgSrc: img20,
-    },
-    {
-      id: 21,
-      imgSrc: img21,
-    },
-    {
-      id: 22,
-      imgSrc: img22,
-    },
-    {
-      id: 23,
-      imgSrc: img23,
-    },
-    {
-      id: 24,
-      imgSrc: img24,
-    },
-    {
-      id: 25,
-      imgSrc: img25,
-    },
-    {
-      id: 26,
-      imgSrc: img26,
-    },
-    {
-      id: 27,
-      imgSrc: img27,
-    },
-    {
-      id: 28,
-      imgSrc: img28,
-    },
-    {
-      id: 29,
-      imgSrc: img29,
-    },
-    {
-      id: 30,
-      imgSrc: img30,
-    },
-    {
-      id: 31,
-      imgSrc: img31,
-    },
+    // {
+    //   id: 14,
+    //   imgSrc: img14,
+    // },
+    // {
+    //   id: 15,
+    //   imgSrc: img15,
+    // },
+    // {
+    //   id: 16,
+    //   imgSrc: img16,
+    // },
+    // {
+    //   id: 17,
+    //   imgSrc: img17,
+    // },
+    // {
+    //   id: 18,
+    //   imgSrc: img18,
+    // },
+    // {
+    //   id: 19,
+    //   imgSrc: img19,
+    // },
+    // {
+    //   id: 20,
+    //   imgSrc: img20,
+    // },
+    // {
+    //   id: 21,
+    //   imgSrc: img21,
+    // },
+    // {
+    //   id: 22,
+    //   imgSrc: img22,
+    // },
+    // {
+    //   id: 23,
+    //   imgSrc: img23,
+    // },
+    // {
+    //   id: 24,
+    //   imgSrc: img24,
+    // },
+    // {
+    //   id: 25,
+    //   imgSrc: img25,
+    // },
+    // {
+    //   id: 26,
+    //   imgSrc: img26,
+    // },
+    // {
+    //   id: 27,
+    //   imgSrc: img27,
+    // },
+    // {
+    //   id: 28,
+    //   imgSrc: img28,
+    // },
+    // {
+    //   id: 29,
+    //   imgSrc: img29,
+    // },
+    // {
+    //   id: 30,
+    //   imgSrc: img30,
+    // },
+    // {
+    //   id: 31,
+    //   imgSrc: img31,
+    // },
   ];
 
   const getItem = (imgSrc) => {

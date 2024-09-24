@@ -139,9 +139,9 @@
     "message": "Nachricht",
     "submit": "Einreichen",
     "ourOpeningHrs": "Unsere Öffnungszeiten",
-    "timeOne": "Do. 8PM–01:00 Uhr",
-    "timeTwo": "Fr. 20:00 bis 04:00 Uhr",
-    "timeThree": "Sa. 20:00–04:00 Uhr"
+    "timeOne": "Do. 20 bis 4Uhr",
+    "timeTwo": "Fr. 21 bis 4Uhr",
+    "timeThree": "Sa. 21 bis 4Uhr"
   },
   "footer": {
     "addressTitle": "Adresse",

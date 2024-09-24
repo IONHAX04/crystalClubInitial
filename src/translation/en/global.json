@@ -139,9 +139,9 @@
     "message": "Message",
     "submit": "Submit",
     "ourOpeningHrs": "Our opening hours",
-    "timeOne": "Thurs. 20 bis 4Uhr",
-    "timeTwo": "Fri. 21 bis 4Uhr",
-    "timeThree": "Sat. 21 bis 4Uhr"
+    "timeOne": "Thurs. 8PM to 1AM",
+    "timeTwo": "Fri. 9PM to 4AM",
+    "timeThree": "Sat. 9PM to 4AM"
   },
   "footer": {
     "addressTitle": "Address",
