@@ -38,18 +38,21 @@ export default function Footer() {
               flexDirection: "column",
             }}
           >
-            <Row style={{ justifyContent: "center" }}>
+            <Row style={{ justifyContent: "space-between", width: "95%" }}>
               <Col md={4} lg={3} className="mb-4">
                 <h3 className="text-white text-xl mb-3">
                   {t("footer.addressTitle")}
                 </h3>
                 <Nav className="flex-column">
                   <Nav.Link className="text-lg text-white hover:text-yellow-500">
-                    {t("footer.addressValue")}
+                    <p>Crystal Club & Lounge,</p>
+                    <p>Sandbüehlstrasse 6,</p>
+                    <p>8604 Volketswil,</p>
+                    <p>Switzerland.</p>
                   </Nav.Link>
                 </Nav>
               </Col>
-              <Col md={4} lg={2} className="mb-4">
+              <Col md={4} lg={3} className="mb-4">
                 <h3 className="text-white text-xl mb-3">
                   {t("footer.quickLinks")}
                 </h3>
