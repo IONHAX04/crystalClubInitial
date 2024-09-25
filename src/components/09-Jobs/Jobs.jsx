@@ -23,11 +23,11 @@ export default function Jobs() {
     twitter: "",
     tiktok: "",
     onlyFans: "",
-    aboutYou: "",
-    doneYes: "",
-    guest: "",
-    superPower: "",
-    funnyStory: "",
+    // aboutYou: "",
+    // doneYes: "",
+    // guest: "",
+    // superPower: "",
+    // funnyStory: "",
     expectSalary: "",
     heardAboutThis: "",
   });
@@ -65,11 +65,6 @@ export default function Jobs() {
       - OnlyFans: ${data.onlyFans}%0D%0A%0D%0A
   
       **Additional Details:**%0D%0A
-      - About Me: ${data.aboutYou}%0D%0A
-      - Done Before (If yes, where and when): ${data.doneYes}%0D%0A
-      - Guest relationships: ${data.guest}%0D%0A
-      - Superpower: ${data.superPower}%0D%0A
-      - Funny Story: ${data.funnyStory}%0D%0A
       - Expected Salary: ${data.expectSalary}%0D%0A
       - How did you hear about us?: ${data.heardAboutThis}%0D%0A%0D%0A
   
@@ -228,7 +223,7 @@ export default function Jobs() {
                 </Col>
 
                 {/* ADDITIONAL DETAILS */}
-                <Col lg={12}>
+                {/* <Col lg={12}>
                   <h4>{t("join.additionalDetails")}</h4>
                 </Col>
 
@@ -280,7 +275,7 @@ export default function Jobs() {
                     placeholder={t("join.funnyStory")}
                     onChange={handleChange}
                   />
-                </Col>
+                </Col> */}
 
                 {/* <Col lg={12}>
                   <Form.Control

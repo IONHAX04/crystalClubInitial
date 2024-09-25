@@ -13,8 +13,8 @@
     "homeTitle": "Crystal Club & Lounge",
     "homeIntroOne": "Erleben Sie unvergessliche Abende voller Eleganz, Sinnlichkeit und erstklassiger Unterhaltung.",
     "homeIntroTwo": "Der Crystal Club & Lounge verspricht unterhaltsame Shows mit bezaubernden Girls und tollen Drinks.",
-    "homeIntroThree": "Genießen Sie atemberaubende Stripshows und verführerische Tabledances mit exotischen Tänzerinnen",
-    "homeIntroFour": "Unsere Getränkeauswahl lässt keine Wünsche offen. Lasst uns Spaß haben!",
+    "homeIntroThree": "Geniessen Sie atemberaubende Stripshows und verführerische Tabledances mit exotischen Tänzerinnen",
+    "homeIntroFour": "Unsere Getränkeauswahl lässt keine Wünsche offen. Lasst uns Spass haben!",
     "testimonailOne": "„Eine Nacht im Crystal Club & Lounge ist einzigartig! Das Ambiente, der Service und die Unterhaltung sind einfach unvergesslich. Sehr empfehlenswert!“",
     "testimonialOneBy": " ~ Simon K.",
     "aboutUs": "Über uns",
@@ -29,10 +29,10 @@
   },
   "entrance": {
     "entranceTitle": "Eingang",
-    "crystalDollar": "Kristalldollar",
+    "crystalDollar": "Crystal Dollars",
     "entranceRuleOne": "Der Eintrittspreis von 10 CHF wird beim ersten Getränk verrechnet.",
     "entranceRuleTwo": "Bei Bestellung Ihres ersten Getränks erhalten Sie 5 Crystal Dollars.",
-    "entranceRuleThree": "Die Dollar dienen als Trinkgeld für die Tänzer - 5 Crystal Dollars - 10 CHF"
+    "entranceRuleThree": "Die Dollar dienen als Trinkgeld für die Tänzerinnen - 5 Crystal Dollars - 10 CHF"
   },
   "contact": {
     "contactTitle": "Planen Sie Ihre perfekte Veranstaltung",
@@ -58,7 +58,7 @@
     "contactUsToday": "Kontaktieren Sie uns noch heute"
   },
   "discoverClub": {
-    "clubTitle": "Der Crystal Club & Lounge",
+    "clubTitle": "Die Crystal Club & Lounge",
     "clubQuote": "Verbringen Sie mit uns einen unvergesslichen Abend…",
     "clubIntroOne": "Liebhaber einer erotischen Show an der Stange kommen in unserem Strip & Table Dance Club voll auf ihre Kosten. Lassen Sie sich von unseren wunderschönen exotischen Tänzerinnen verzaubern, die entweder auf der großen Showbühne oder hautnah an den Tanzstangen direkt am Tisch für Unterhaltung sorgen.",
     "clubIntroTwo": "Tänzerinnen, die entweder auf der grossen Show-Bühne oder hautnah an den Tanzstangen direkt auf dem Tisch für Entertainment sorgen. ",
@@ -123,7 +123,7 @@
   "rentBar": {
     "rentOurBar": "Mieten Sie unsere Bar",
     "rentOne": "Veranstalten Sie Ihr nächstes besonderes Event im Crystal Club & Lounge, dem perfekten Ort für unvergessliche Feiern. Ob Geburtstag, Junggesellenabschied oder Firmenfeier, unser Club bietet eine einzigartige Mischung aus Eleganz, exotischer Unterhaltung und einer erstklassigen Getränkeauswahl.",
-    "rentTwo": "Bereit, Ihre Veranstaltung zu planen? Füllen Sie einfach das untenstehende Formular aus, um sich über die Anmietung unserer Bar zu erkundigen. Wir helfen Ihnen, einen außergewöhnlichen Abend für Sie und Ihre Gäste zu gestalten.",
+    "rentTwo": "Bereit, Ihre Veranstaltung zu planen? Füllen Sie einfach das untenstehende Formular aus, um sich über die Anmietung unserer Bar zu erkundigen. Wir helfen Ihnen, einen aussergewöhnlichen Abend für Sie und Ihre Gäste zu gestalten.",
     "formTitle": "Buchen Sie Ihre Bar hier!",
     "eventDate": "Datum und Uhrzeit der Veranstaltung",
     "numberOfPerson": "Anzahl der Personen",
@@ -142,27 +142,27 @@
     "message": "Nachricht",
     "submit": "Einreichen",
     "ourOpeningHrs": "Unsere Öffnungszeiten",
-    "timeOne": "Do. 20 bis 4Uhr",
-    "timeTwo": "Fr. 21 bis 4Uhr",
-    "timeThree": "Sa. 21 bis 4Uhr"
+    "timeOne": "Do. 20 Uhr bis 4Uhr",
+    "timeTwo": "Fr. 21 Uhr bis 4Uhr",
+    "timeThree": "Sa. 21 Uhr bis 4Uhr"
   },
   "footer": {
     "addressTitle": "Adresse",
     "addressValue": "Crystal Club & Lounge Sandbühlstrasse 68604 Volketswil Schweiz",
     "quickLinks": "Direktlinks",
-    "home": "Heim",
-    "rent": "Bars mieten",
+    "home": "Crystal Club",
+    "rent": "Bar Mieten",
     "events": "Veranstaltungen",
     "blogs": "Blogs",
     "entrance": "Eingang",
     "gallery": "Galerie",
-    "girls": "Mädchen",
+    "girls": "Girls",
     "faq": "Häufig gestellte Fragen",
     "aboutUs": "Über uns",
     "experience": "Das Erlebnis",
     "jobs": "Jobs",
     "discoverClub": "Club entdecken",
-    "menu": "Speisekarte & Bar",
+    "menu": "Menukarte",
     "getInTouch": "Kontaktieren Sie uns",
     "contactUs": "Kontaktieren Sie uns",
     "support": "Unterstützung",
