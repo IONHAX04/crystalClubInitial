@@ -5,12 +5,17 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { AnimatePresence, motion } from "framer-motion";
 
+import german from "../../assets/Icons/german.png";
+import english from "../../assets/Icons/english.png";
+
+import Spinners from "../15-Spinner/Spinners";
 import logo from "../../assets/Logo/logo-red.png";
 
 import "./Header.css";
 
 export default function Header() {
-  const { t } = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
+  const [loading, setLoading] = useState(false);
   const [headerBg, setHeaderBg] = useState("transparent");
   const navigate = useNavigate();
 
@@ -19,6 +24,18 @@ export default function Header() {
     window.scrollTo(0, 0);
     setOpen(false);
   };
+
+  const handleChangeLang = (lang) => {
+    setLoading(true);
+    setTimeout(() => {
+      i18n.changeLanguage(lang);
+      setLoading(false);
+    }, 800);
+  };
+
+  const currentLang = i18n.language;
+
+  const languageIcon = currentLang === "en" ? german : english;
 
   const navLinks = [
     { title: t("footer.home"), href: "/" },
@@ -135,20 +152,27 @@ export default function Header() {
           width: "100%",
         }}
       >
+        {loading && <Spinners />}
+
         <nav
           className="flex justify-around item-center py-4 lg:py-4 px-2"
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-around",
+            justifyContent: "space-between",
+            margin: "0px 10px",
           }}
         >
           <div className="flex items-center gap-[1ch]">
             <img src={logo} height={120} width={120} />
           </div>
           <div
-            className="lg:flex hidden gap-12 text-md text-[#e3304e] cursor-pointer"
-            style={{ fontWeight: "bold", fontSize: "17px" }}
+            className="lg:flex hidden gap-4 text-md text-[#e3304e] cursor-pointer"
+            style={{
+              fontWeight: "bold",
+              fontSize: "17px",
+              textAlign: "center",
+            }}
           >
             <p onClick={() => handleNavigate("/")}>{t("footer.home")}</p>
             <p onClick={() => handleNavigate("/experience")}>
@@ -172,12 +196,24 @@ export default function Header() {
               {t("footer.contactUs")}
             </p>
           </div>
+
           <div
             className="cursor-pointer pt-px lg:hidden text-md text-white"
             onClick={toggleMenu}
           >
             Menu
           </div>
+          <p
+            href="#translate"
+            className="me-5"
+            onClick={(e) => {
+              e.preventDefault();
+              const newLang = currentLang === "en" ? "de" : "en";
+              handleChangeLang(newLang);
+            }}
+          >
+            <img src={languageIcon} alt="translate" height={30} width={30} />
+          </p>
         </nav>
         <AnimatePresence>
           {open && (
