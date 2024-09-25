@@ -2,6 +2,8 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import "./Contact.css";
 
+import { Helmet } from "react-helmet";
+
 export default function Contact() {
   const { t } = useTranslation("global");
   const [formData, setFormData] = useState({
@@ -38,6 +40,22 @@ export default function Contact() {
 
   return (
     <div className="contactUs">
+      <Helmet>
+        <title>Contact Us - Crystal Club & Lounge</title>
+        <meta name="description" content="Crystal Club & Lounge." />
+        <link rel="canonical" href="https://crystalclub.ch/" />
+
+        <meta
+          name="keywords"
+          content="club, crystal club, crystal, home, about, girls, gallery, club, events, drinks, blogs, jobs, crystal club home, crystal club and lounge, crystal club and lounge home,, europe, girls, german, girls club, private party, bachelors party, birthday party, private dance"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          name="description"
+          content="Experience unforgettable evenings full of elegance, sensuality and first-class entertainment."
+        />
+      </Helmet>
       <section id="contact" className="contact section col-lg-7">
         <div className="container sectionTitle" data-aos="fade-up">
           <h2>{t("contactUs.contactUs")}</h2>
