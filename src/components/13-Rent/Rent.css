@@ -14,6 +14,12 @@
   width: 100%;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  .rentBar {
+    background-attachment: scroll;
+  }
+}
+
 .rentBar::before,
 .joinUsContent::before {
   content: "";

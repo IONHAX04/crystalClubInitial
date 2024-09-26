@@ -14,6 +14,12 @@
   width: 100%;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  .blogContents {
+    background-attachment: scroll;
+  }
+}
+
 .blogContents::before {
   content: "";
   position: absolute;

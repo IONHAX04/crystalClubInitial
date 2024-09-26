@@ -135,6 +135,15 @@
   width: 100%;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  .welcomeContent,
+  .welcomeIntro,
+  .qualityContent,
+  .aboutUsContent {
+    background-attachment: scroll;
+  }
+}
+
 .welcomeContent::before,
 .aboutUsContent::before {
   content: "";

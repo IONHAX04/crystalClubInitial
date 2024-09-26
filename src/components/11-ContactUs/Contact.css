@@ -28,6 +28,12 @@
   width: 100%;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  .contactUs {
+    background-attachment: scroll;
+  }
+}
+
 .contactUs::before {
   content: "";
   position: absolute;

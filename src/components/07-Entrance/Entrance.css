@@ -14,6 +14,12 @@
   width: 100%;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  .entranceClub {
+    background-attachment: scroll;
+  }
+}
+
 .entranceClub::before {
   content: "";
   position: absolute;

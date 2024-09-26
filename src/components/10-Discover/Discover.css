@@ -95,6 +95,17 @@
   width: 100%;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  .privateDance,
+  .discoverClubIntro,
+  .tableExperience,
+  .stripShow,
+  .partyGroup,
+  .requestParty {
+    background-attachment: scroll;
+  }
+}
+
 .privateDance::before,
 .discoverClubIntro::before,
 .tableExperience::before,
