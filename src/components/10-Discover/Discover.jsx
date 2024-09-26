@@ -69,9 +69,6 @@ export default function Discover() {
             <p data-aos="fade-up" data-aos-delay="200">
               {t("discoverClub.tableDanceCont")}
             </p>
-            <p data-aos="fade-up" data-aos-delay="200">
-              {t("discoverClub.tableDanceContTwo")}
-            </p>
           </div>
         </div>
         <div className="stripShow">
