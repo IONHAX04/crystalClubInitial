@@ -35,7 +35,7 @@ import mylla1 from "../../assets/GirlsImg/Mylla/img1.png";
 import mylla2 from "../../assets/GirlsImg/Mylla/img2.png";
 
 import amber1 from "../../assets/GirlsImg/Amber/img1.png";
-import amber2 from "../../assets/GirlsImg/Amber/img1.png";
+import amber2 from "../../assets/GirlsImg/Amber/img2.png";
 
 import linda1 from "../../assets/GirlsImg/Linda/img1.png";
 import linda2 from "../../assets/GirlsImg/Linda/img2.png";
