@@ -1,284 +1,151 @@
-import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { twMerge } from "tailwind-merge";
+import { useTranslation } from "react-i18next";
 
-// Importing all images
-import amber1 from "../../assets/GirlsImg/Amber/img1.JPG";
-import amber2 from "../../assets/GirlsImg/Amber/img2.JPG";
+import { Card, Modal, Row, Col } from "react-bootstrap";
+
+import { useState } from "react";
+import "./Girls.css";
+import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
+
+import freya from "../../assets/GirlsImg/Freya/img1.JPG";
+import maroona from "../../assets/GirlsImg/Maroona/img1.JPG";
+import angelique from "../../assets/GirlsImg/Angelique/img1.JPG";
+import noemi from "../../assets/GirlsImg/Noemi/img1.JPG";
+import mylla from "../../assets/GirlsImg/Mylla/img1.JPG";
+import amber from "../../assets/GirlsImg/Amber/img1.JPG";
+import linda from "../../assets/GirlsImg/Linda/img2.JPG";
+
+import freya1 from "../../assets/GirlsImg/Freya/img1.png";
+import freya2 from "../../assets/GirlsImg/Freya/img2.png";
+import freya3 from "../../assets/GirlsImg/Freya/img3.png";
+
+import maroona1 from "../../assets/GirlsImg/Maroona/img1.png";
+import maroona2 from "../../assets/GirlsImg/Maroona/img2.png";
+import maroona3 from "../../assets/GirlsImg/Maroona/img3.png";
 
 import angelique1 from "../../assets/GirlsImg/Angelique/img1.JPG";
 import angelique2 from "../../assets/GirlsImg/Angelique/img2.JPG";
-import angelique3 from "../../assets/GirlsImg/Angelique/img3.JPG";
+import angelique3 from "../../assets/GirlsImg/Angelique/img3.jpg";
 
-import Freya1 from "../../assets/GirlsImg/Freya/img1.JPG";
-import Freya2 from "../../assets/GirlsImg/Freya/im2.JPG";
-import Freya3 from "../../assets/GirlsImg/Freya/img3.JPG";
+import noemi1 from "../../assets/GirlsImg/Noemi/img1.png";
+import noemi2 from "../../assets/GirlsImg/Noemi/img2.png";
+import noemi3 from "../../assets/GirlsImg/Noemi/img3.png";
 
-import Linda1 from "../../assets/GirlsImg/Linda/img1.JPG";
-import Linda2 from "../../assets/GirlsImg/Linda/img2.JPG";
-import Linda3 from "../../assets/GirlsImg/Linda/img3.JPG";
-import Linda4 from "../../assets/GirlsImg/Linda/img4.JPG";
+import mylla1 from "../../assets/GirlsImg/Mylla/img1.png";
+import mylla2 from "../../assets/GirlsImg/Mylla/img2.png";
 
-import Maroona1 from "../../assets/GirlsImg/Maroona/img1.JPG";
-import Maroona2 from "../../assets/GirlsImg/Maroona/img2.JPG";
-import Maroona3 from "../../assets/GirlsImg/Maroona/img3.JPG";
+import amber1 from "../../assets/GirlsImg/Amber/img1.png";
+import amber2 from "../../assets/GirlsImg/Amber/img1.png";
 
-import Mylla1 from "../../assets/GirlsImg/Mylla/img1.jpg";
-import Mylla2 from "../../assets/GirlsImg/Mylla/img2.jpg";
-import Mylla3 from "../../assets/GirlsImg/Mylla/img3.jpg";
+import linda1 from "../../assets/GirlsImg/Linda/img1.png";
+import linda2 from "../../assets/GirlsImg/Linda/img2.png";
+import linda3 from "../../assets/GirlsImg/Linda/img3.png";
 
-import Noemi1 from "../../assets/GirlsImg/Noemi/img1.JPG";
-import Noemi2 from "../../assets/GirlsImg/Noemi/img2.JPG";
-import Noemi3 from "../../assets/GirlsImg/Noemi/img3.JPG";
+const blogData = [
+  {
+    id: 1,
+    title: "Freya",
+    img: freya,
+    galleryImages: [freya1, freya2, freya3],
+  },
+  {
+    id: 2,
+    title: "Maroona ",
+    img: maroona,
+    galleryImages: [maroona1, maroona2, maroona3],
+  },
+  {
+    id: 3,
+    title: "Angelique",
+    img: angelique,
+    galleryImages: [angelique1, angelique2, angelique3],
+  },
+  {
+    id: 4,
+    title: "Noemi",
+    img: noemi,
+    galleryImages: [noemi1, noemi2, noemi3],
+  },
+  {
+    id: 5,
+    title: "Mylla",
+    img: mylla,
+    galleryImages: [mylla1, mylla2],
+  },
+  {
+    id: 6,
+    title: "Amber",
+    img: amber,
+    galleryImages: [amber1, amber2],
+  },
+  {
+    id: 7,
+    title: "Linda",
+    img: linda,
+    galleryImages: [linda1, linda2, linda3],
+  },
+];
 
 export default function Girls() {
-  return (
-    <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-neutral-950">
-      <h2 className="relative z-0 text-[20vw] font-black text-neutral-800 md:text-[200px]">
-        Crystal Club Girls
-      </h2>
-      <Cards />
-    </section>
-  );
-}
+  const { t } = useTranslation("global");
 
-const Cards = () => {
-  const containerRef = useRef(null);
+  const navigate = useNavigate();
 
-  return (
-    <div className="absolute inset-0 z-10" ref={containerRef}>
-      <Card
-        containerRef={containerRef}
-        src={amber1}
-        alt="Amber image 1"
-        rotate="6deg"
-        top="20%"
-        left="25%"
-        className="w-36 md:w-56"
-      />
-      <Card
-        containerRef={containerRef}
-        src={amber2}
-        alt="Amber image 2"
-        rotate="-8deg"
-        top="30%"
-        left="35%"
-        className="w-40 md:w-60"
-      />
-      <Card
-        containerRef={containerRef}
-        src={angelique1}
-        alt="Angelique image 1"
-        rotate="12deg"
-        top="45%"
-        left="60%"
-        className="w-24 md:w-48"
-      />
-      <Card
-        containerRef={containerRef}
-        src={angelique2}
-        alt="Angelique image 2"
-        rotate="-10deg"
-        top="50%"
-        left="70%"
-        className="w-36 md:w-56"
-      />
-      <Card
-        containerRef={containerRef}
-        src={angelique3}
-        alt="Angelique image 3"
-        rotate="15deg"
-        top="55%"
-        left="80%"
-        className="w-40 md:w-60"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Freya1}
-        alt="Freya image 1"
-        rotate="-6deg"
-        top="20%"
-        left="40%"
-        className="w-52 md:w-80"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Freya2}
-        alt="Freya image 2"
-        rotate="8deg"
-        top="40%"
-        left="50%"
-        className="w-36 md:w-60"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Freya3}
-        alt="Freya image 3"
-        rotate="-12deg"
-        top="30%"
-        left="60%"
-        className="w-44 md:w-72"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Linda1}
-        alt="Linda image 1"
-        rotate="8deg"
-        top="50%"
-        left="40%"
-        className="w-48 md:w-72"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Linda2}
-        alt="Linda image 2"
-        rotate="-6deg"
-        top="55%"
-        left="50%"
-        className="w-40 md:w-64"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Linda3}
-        alt="Linda image 3"
-        rotate="10deg"
-        top="60%"
-        left="65%"
-        className="w-48 md:w-72"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Linda4}
-        alt="Linda image 4"
-        rotate="-15deg"
-        top="40%"
-        left="70%"
-        className="w-52 md:w-80"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Maroona1}
-        alt="Maroona image 1"
-        rotate="18deg"
-        top="20%"
-        left="65%"
-        className="w-40 md:w-64"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Maroona2}
-        alt="Maroona image 2"
-        rotate="-10deg"
-        top="30%"
-        left="75%"
-        className="w-44 md:w-72"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Maroona3}
-        alt="Maroona image 3"
-        rotate="14deg"
-        top="25%"
-        left="80%"
-        className="w-48 md:w-76"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Mylla1}
-        alt="Mylla image 1"
-        rotate="-3deg"
-        top="35%"
-        left="55%"
-        className="w-24 md:w-48"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Mylla2}
-        alt="Mylla image 2"
-        rotate="10deg"
-        top="45%"
-        left="65%"
-        className="w-36 md:w-60"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Mylla3}
-        alt="Mylla image 3"
-        rotate="-6deg"
-        top="50%"
-        left="75%"
-        className="w-44 md:w-72"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Noemi1}
-        alt="Noemi image 1"
-        rotate="19deg"
-        top="54%"
-        left="17%"
-        className="w-48 md:w-72"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Noemi2}
-        alt="Noemi image 2"
-        rotate="-12deg"
-        top="60%"
-        left="25%"
-        className="w-40 md:w-64"
-      />
-      <Card
-        containerRef={containerRef}
-        src={Noemi3}
-        alt="Noemi image 3"
-        rotate="16deg"
-        top="65%"
-        left="30%"
-        className="w-48 md:w-72"
-      />
-    </div>
-  );
-};
+  const handleShow = (blog) => {
+    const images = {
+      1: [freya1, freya2, freya3],
+      2: [maroona1, maroona2, maroona3],
+      3: [angelique1, angelique2, angelique3],
+      4: [noemi1, noemi2, noemi3],
+      5: [mylla1, mylla2],
+      6: [amber1, amber2],
+      7: [linda1, linda2, linda3],
+    };
 
-const Card = ({ containerRef, src, alt, top, left, rotate, className }) => {
-  const [zIndex, setZIndex] = useState(0);
-
-  const updateZIndex = () => {
-    const els = document.querySelectorAll(".drag-elements");
-
-    let maxZIndex = -Infinity;
-
-    els.forEach((el) => {
-      let zIndex = parseInt(
-        window.getComputedStyle(el).getPropertyValue("z-index")
-      );
-
-      if (!isNaN(zIndex) && zIndex > maxZIndex) {
-        maxZIndex = zIndex;
-      }
+    navigate("/girlsGallery", {
+      state: { name: blog.title, images: images[blog.id] },
     });
-
-    setZIndex(maxZIndex + 1);
+    window.scrollTo(0, 0);
   };
 
   return (
-    <motion.img
-      onMouseDown={updateZIndex}
-      style={{
-        top,
-        left,
-        rotate,
-        zIndex,
-      }}
-      className={twMerge(
-        "drag-elements absolute w-48 bg-neutral-200 p-1 pb-4",
-        className
-      )}
-      src={src}
-      alt={alt}
-      drag
-      dragConstraints={containerRef}
-      dragElastic={0.65}
-    />
+    <div>
+      <Helmet>
+        <title>Girls - Crystal Club & Lounge</title>
+        <meta name="description" content="Crystal Club & Lounge." />
+        <link rel="canonical" href="https://crystalclub.ch/" />
+
+        <meta
+          name="keywords"
+          content="club, crystal club, crystal, home, about, girls, gallery, club, events, drinks, blogs, jobs, crystal club home, crystal club and lounge, crystal club and lounge home,, europe, girls, german, girls club, private party, bachelors party, birthday party, private dance"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          name="description"
+          content="Experience unforgettable evenings full of elegance, sensuality and first-class entertainment."
+        />
+      </Helmet>
+
+      <div className="girls">
+        {/* <Header /> */}
+        <h3>{t("footer.girls")}</h3>
+        <div className="divider"></div>
+        <Row className="col-lg-10 mt-4" style={{ justifyContent: "center" }}>
+          {blogData.map((blog) => (
+            <Col key={blog.id} lg={3} md={4} sm={6} className="mb-4">
+              <Card className="h-100" onClick={() => handleShow(blog)}>
+                <Card.Img variant="top" src={blog.img} />
+                <Card.Body className="d-flex flex-column">
+                  <div className="flex-grow-1">
+                    <Card.Title className="">{blog.title}</Card.Title>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </div>
+    </div>
   );
-};
+}

@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 120px 10px 0px 10px;
+  padding: 120px 10px 120px 10px;
   background-image: url("../../assets/Images/img4.JPG");
   background-size: cover;
   background-position: center;
@@ -156,4 +156,9 @@
 
 .girls .divider {
   width: 300px !important;
+}
+
+.drag-elements {
+  background: transparent !important;
+  border-radius: 10px;
 }

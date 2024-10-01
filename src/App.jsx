@@ -16,6 +16,8 @@ import Contact from "./components/11-ContactUs/Contact";
 import Rent from "./components/13-Rent/Rent";
 import Events from "./components/14-Events/Events";
 
+import bannerimage from "./assets/banners/banners.jpeg";
+
 import TextParallaxContentExample from "./components/Example/Example";
 
 import whatsApp from "./assets/Icons/whatsapp.png";
@@ -24,8 +26,10 @@ import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Blogs from "./components/12-Blogs/Blogs";
+import GirlsGallery from "./components/08-Girls/GirlsGallery";
 
 export default function App() {
+  
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -51,6 +55,7 @@ export default function App() {
           <Route path="/entrance" element={<Entrance />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/girls" element={<Girls />} />
+          <Route path="/girlsGallery" element={<GirlsGallery />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/join" element={<Join />} />
           <Route path="/gallery" element={<Gallery />} />
