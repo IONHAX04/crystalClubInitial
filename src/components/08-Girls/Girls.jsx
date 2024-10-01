@@ -24,8 +24,8 @@ import Maroona2 from "../../assets/GirlsImg/Maroona/img2.JPG";
 import Maroona3 from "../../assets/GirlsImg/Maroona/img3.JPG";
 
 import Mylla1 from "../../assets/GirlsImg/Mylla/img1.jpg";
-import Mylla2 from "../../assets/GirlsImg/Mylla/img2.jpg";
-import Mylla3 from "../../assets/GirlsImg/Mylla/img3.jpg";
+import Mylla2 from "../../assets/GirlsImg/Mylla/img2.JPG";
+import Mylla3 from "../../assets/GirlsImg/Mylla/img3.JPG";
 
 import Noemi1 from "../../assets/GirlsImg/Noemi/img1.JPG";
 import Noemi2 from "../../assets/GirlsImg/Noemi/img2.JPG";
