@@ -11,7 +11,7 @@ import freya from "../../assets/GirlsImg/Freya/img1.JPG";
 import maroona from "../../assets/GirlsImg/Maroona/img1.JPG";
 import angelique from "../../assets/GirlsImg/Angelique/img1.JPG";
 import noemi from "../../assets/GirlsImg/Noemi/img1.JPG";
-import mylla from "../../assets/GirlsImg/Mylla/img1.JPG";
+import mylla from "../../assets/GirlsImg/Mylla/img1.jpg";
 import amber from "../../assets/GirlsImg/Amber/img1.JPG";
 import linda from "../../assets/GirlsImg/Linda/img2.JPG";
 
