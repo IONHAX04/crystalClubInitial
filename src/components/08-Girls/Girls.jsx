@@ -8,7 +8,7 @@ import amber2 from "../../assets/GirlsImg/Amber/img2.JPG";
 
 import angelique1 from "../../assets/GirlsImg/Angelique/img1.JPG";
 import angelique2 from "../../assets/GirlsImg/Angelique/img2.JPG";
-import angelique3 from "../../assets/GirlsImg/Angelique/img3.JPG";
+import angelique3 from "../../assets/GirlsImg/Angelique/img3.jpg";
 
 import Freya1 from "../../assets/GirlsImg/Freya/img1.JPG";
 import Freya2 from "../../assets/GirlsImg/Freya/im2.JPG";
