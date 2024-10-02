@@ -98,7 +98,7 @@ export default function Girls() {
       2: [maroona1, maroona2, maroona3],
       3: [angelique1, angelique2, angelique3],
       4: [noemi1, noemi2, noemi3],
-      5: [mylla1, mylla2],
+      5: [mylla1, mylla2, mylla3],
       6: [amber1, amber2],
       7: [linda1, linda2, linda3],
     };
