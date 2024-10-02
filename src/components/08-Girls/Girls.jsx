@@ -33,6 +33,7 @@ import noemi3 from "../../assets/GirlsImg/Noemi/img3.png";
 
 import mylla1 from "../../assets/GirlsImg/Mylla/img1.png";
 import mylla2 from "../../assets/GirlsImg/Mylla/img2.png";
+import mylla3 from "../../assets/GirlsImg/Mylla/img1.jpg";
 
 import amber1 from "../../assets/GirlsImg/Amber/img1.png";
 import amber2 from "../../assets/GirlsImg/Amber/img2.png";
@@ -70,7 +71,7 @@ const blogData = [
     id: 5,
     title: "Mylla",
     img: mylla,
-    galleryImages: [mylla1, mylla2],
+    galleryImages: [mylla1, mylla2, mylla3],
   },
   {
     id: 6,
