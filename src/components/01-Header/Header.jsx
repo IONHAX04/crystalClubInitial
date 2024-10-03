@@ -167,10 +167,10 @@ export default function Header() {
             <img src={logo} height={120} width={120} />
           </div>
           <div
-            className="lg:flex hidden gap-4 text-md text-[#e3304e] cursor-pointer"
+            className="lg:flex hidden gap-4 text-md text-[#ffffff] cursor-pointer"
             style={{
               fontWeight: "bold",
-              fontSize: "17px",
+              fontSize: "15px",
               textAlign: "center",
             }}
           >
