@@ -21,36 +21,36 @@ const eventData = [
     img: eventImg2,
     date: "20 Uhr, 31.Oktober, 2024",
   },
-  {
-    id: 2,
-    title: "Upcoming Party Extravaganza",
-    description:
-      "Join us for an unforgettable night of fun, music, and dance at our upcoming party!",
-    content:
-      "Get ready for the most exciting party of the year! With top DJs spinning the latest hits, themed decorations, and an electric atmosphere, this event will be the highlight of the season. Book your tickets now and prepare for an evening of non-stop fun with special performances and surprise giveaways!",
-    img: eventImg1,
-    date: "November 5, 2024",
-  },
-  {
-    id: 3,
-    title: "Celebrity Night: Special Guests & Performances",
-    description:
-      "Celebrities are coming to our venue for a night of glitz, glamour, and live performances.",
-    content:
-      "Don’t miss the chance to party with the stars! Our upcoming celebrity night will feature live performances by renowned artists, special guest appearances, and plenty of opportunities to meet your favorite celebrities. Enjoy a VIP experience and take part in exclusive meet-and-greet sessions. Limited tickets available, so act fast!",
-    img: eventImg3,
-    date: "December 12, 2024",
-  },
-  {
-    id: 4,
-    title: "Holiday Gala & Winter Wonderland",
-    description:
-      "Celebrate the holiday season with our grand Holiday Gala, featuring live entertainment and themed decor.",
-    content:
-      "Step into a winter wonderland and celebrate the holiday season at our annual gala. Enjoy gourmet dining, live performances, and festive decorations that capture the magic of the season. Perfect for families, friends, or corporate gatherings, this event is sure to get you in the holiday spirit!",
-    img: eventImg4,
-    date: "December 25, 2024",
-  },
+  // {
+  //   id: 2,
+  //   title: "Upcoming Party Extravaganza",
+  //   description:
+  //     "Join us for an unforgettable night of fun, music, and dance at our upcoming party!",
+  //   content:
+  //     "Get ready for the most exciting party of the year! With top DJs spinning the latest hits, themed decorations, and an electric atmosphere, this event will be the highlight of the season. Book your tickets now and prepare for an evening of non-stop fun with special performances and surprise giveaways!",
+  //   img: eventImg1,
+  //   date: "November 5, 2024",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Celebrity Night: Special Guests & Performances",
+  //   description:
+  //     "Celebrities are coming to our venue for a night of glitz, glamour, and live performances.",
+  //   content:
+  //     "Don’t miss the chance to party with the stars! Our upcoming celebrity night will feature live performances by renowned artists, special guest appearances, and plenty of opportunities to meet your favorite celebrities. Enjoy a VIP experience and take part in exclusive meet-and-greet sessions. Limited tickets available, so act fast!",
+  //   img: eventImg3,
+  //   date: "December 12, 2024",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Holiday Gala & Winter Wonderland",
+  //   description:
+  //     "Celebrate the holiday season with our grand Holiday Gala, featuring live entertainment and themed decor.",
+  //   content:
+  //     "Step into a winter wonderland and celebrate the holiday season at our annual gala. Enjoy gourmet dining, live performances, and festive decorations that capture the magic of the season. Perfect for families, friends, or corporate gatherings, this event is sure to get you in the holiday spirit!",
+  //   img: eventImg4,
+  //   date: "December 25, 2024",
+  // },
 ];
 
 export default function Events() {

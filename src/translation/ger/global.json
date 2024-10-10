@@ -28,10 +28,10 @@
     "galleryClubContact": "Kontaktieren Sie uns"
   },
   "entrance": {
-    "entranceTitle": "Eingang",
+    "entranceTitle": "Enitritt",
     "crystalDollar": "Crystal Dollars",
-    "entranceRuleOne": "Der Eintrittspreis von 10 CHF wird beim ersten Getränk verrechnet.",
-    "entranceRuleTwo": "Bei Bestellung Ihres ersten Getränks erhalten Sie 5 Crystal Dollars.",
+    "entranceRuleOne": "Der Eintrittspreis kostet 10 CHF. Sie erhalten 5 Crystal Dollars.",
+    "entranceRuleTwo": "Bei Bestellung Ihres ersten Getränks erhalten Sie .",
     "entranceRuleThree": "Die Dollar dienen als Trinkgeld für die Tänzerinnen - 5 Crystal Dollars - 10 CHF"
   },
   "contact": {
@@ -153,7 +153,7 @@
     "rent": "Bar Mieten",
     "events": "Veranstaltungen",
     "blogs": "Blogs",
-    "entrance": "Eingang",
+    "entrance": "Enitritt",
     "gallery": "Galerie",
     "girls": "Girls",
     "faq": "Häufig gestellte Fragen",

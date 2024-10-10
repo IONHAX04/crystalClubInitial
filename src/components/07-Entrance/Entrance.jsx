@@ -39,7 +39,7 @@ export default function Entrance() {
           <div className="divider"></div>
           <h4>{t("entrance.crystalDollar")}</h4>
           <p>{t("entrance.entranceRuleOne")}</p>
-          <p>{t("entrance.entranceRuleTwo")}</p>
+          {/* <p>{t("entrance.entranceRuleTwo")}</p> */}
           <p>{t("entrance.entranceRuleThree")}</p>
         </div>
       </div>
