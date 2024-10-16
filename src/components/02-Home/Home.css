@@ -25,6 +25,7 @@
 .contentContainer {
   position: relative;
   z-index: 1;
+  width: 100% !important;
   color: white;
   overflow-y: scroll;
 }

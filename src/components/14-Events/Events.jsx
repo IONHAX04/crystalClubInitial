@@ -93,7 +93,14 @@ export default function Events() {
 
           <Row className="mt-3">
             {eventData.map((blog) => (
-              <Col key={blog.id} lg={3} md={4} sm={6} className="mb-4">
+              <Col
+                key={blog.id}
+                lg={3}
+                md={4}
+                sm={6}
+                className="mb-4"
+                style={{ width: "18rem" }}
+              >
                 <Card className="h-100">
                   <Card.Img variant="top" src={blog.img} />
                   <Card.Body className="d-flex flex-column">
