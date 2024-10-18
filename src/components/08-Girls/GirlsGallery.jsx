@@ -25,9 +25,9 @@ const Cards = ({ images = [] }) => {
   const containerRef = useRef(null);
 
   const generateDynamicStyles = (index, total) => {
-    const top = `${Math.random() * 80 + index * 2}%`;
-    const left = `${Math.random() * 30 + index * 4}%`;
-    const rotate = `${(index % 2 === 0 ? 1 : -1) * (Math.random() * 10)}deg`;
+    const top = `${Math.random() * 30 + index * 5}%`; // Random but spaced by index
+    const left = `${Math.random() * 30 + index * 2}%`; // Random but spaced by index
+    const rotate = `${(index % 2 === 0 ? 1 : -1) * (Math.random() * 15)}deg`; // Random rotation
 
     return { top, left, rotate };
   };
@@ -42,7 +42,7 @@ const Cards = ({ images = [] }) => {
             containerRef={containerRef}
             src={image}
             alt={`Image ${index + 1}`}
-            {...dynamicStyles}
+            {...dynamicStyles} // Spread the dynamically generated styles
             className="w-96 h-96 md:w-44 md:h-64"
           />
         );
