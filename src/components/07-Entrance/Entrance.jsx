@@ -41,6 +41,12 @@ export default function Entrance() {
           <p>{t("entrance.entranceRuleOne")}</p>
           {/* <p>{t("entrance.entranceRuleTwo")}</p> */}
           <p>{t("entrance.entranceRuleThree")}</p>
+          <p>Zahlungsmittel</p>
+          <p>Twint</p>
+          <p>Debit/Kreditkarte</p>
+          <p>*Keine American Express</p>
+          <p>Bargeld/Cash</p>
+          <p>*Wir akzeptieren nur Bargeld für Separee & Tabledances</p>
         </div>
       </div>
     </div>

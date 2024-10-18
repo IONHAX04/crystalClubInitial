@@ -24,20 +24,29 @@ export default function GirlsGallery() {
 const Cards = ({ images = [] }) => {
   const containerRef = useRef(null);
 
+  const generateDynamicStyles = (index, total) => {
+    const top = `${Math.random() * 80 + index * 2}%`;
+    const left = `${Math.random() * 30 + index * 4}%`;
+    const rotate = `${(index % 2 === 0 ? 1 : -1) * (Math.random() * 10)}deg`;
+
+    return { top, left, rotate };
+  };
+
   return (
     <div className="absolute inset-0 z-10" ref={containerRef}>
-      {images.map((image, index) => (
-        <Card
-          key={index}
-          containerRef={containerRef}
-          src={image}
-          alt={`Image ${index + 1}`}
-          rotate={`${(index % 2 === 0 ? 1 : -1) * (index + 1) * 6}deg`}
-          top={`${20 + index * 10}%`}
-          left={`${15 + index * 1}%`}
-          className="w-96 h-96 md:w-44 md:h-64"
-        />
-      ))}
+      {images.map((image, index) => {
+        const dynamicStyles = generateDynamicStyles(index, images.length);
+        return (
+          <Card
+            key={index}
+            containerRef={containerRef}
+            src={image}
+            alt={`Image ${index + 1}`}
+            {...dynamicStyles}
+            className="w-96 h-96 md:w-44 md:h-64"
+          />
+        );
+      })}
     </div>
   );
 };
