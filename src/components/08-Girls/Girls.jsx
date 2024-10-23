@@ -14,6 +14,7 @@ import noemi from "../../assets/GirlsImg/Noemi/img1.JPG";
 import mylla from "../../assets/GirlsImg/Mylla/img1.jpg";
 import amber from "../../assets/GirlsImg/Amber/img1.JPG";
 import linda from "../../assets/GirlsImg/Linda/img2.JPG";
+import chanel from "../../assets/GirlsImg/chanel/chanel.png";
 
 import freya1 from "../../assets/GirlsImg/Freya/img1.png";
 import freya2 from "../../assets/GirlsImg/Freya/img2.png";
@@ -41,6 +42,10 @@ import amber2 from "../../assets/GirlsImg/Amber/img2.png";
 import linda1 from "../../assets/GirlsImg/Linda/img1.png";
 import linda2 from "../../assets/GirlsImg/Linda/img2.png";
 import linda3 from "../../assets/GirlsImg/Linda/img3.png";
+
+import chanel1 from "../../assets/GirlsImg/chanel/chanel1.png";
+import chanel2 from "../../assets/GirlsImg/chanel/chanel2.png";
+import chanel3 from "../../assets/GirlsImg/chanel/chanel3.png";
 
 const blogData = [
   {
@@ -85,6 +90,12 @@ const blogData = [
     img: linda,
     galleryImages: [linda1, linda2, linda3],
   },
+  {
+    id: 8,
+    title: "Chanel",
+    img: chanel,
+    galleryImages: [chanel1, chanel2, chanel3],
+  },
 ];
 
 export default function Girls() {
@@ -101,6 +112,7 @@ export default function Girls() {
       5: [mylla1, mylla2, mylla3],
       6: [amber1, amber2],
       7: [linda1, linda2, linda3],
+      8: [chanel1, chanel2, chanel3],
     };
 
     navigate("/girlsGallery", {
@@ -110,7 +122,7 @@ export default function Girls() {
   };
 
   return (
-    <div>
+    <div> 
       <Helmet>
         <title>
           Girls - Crystal Club Zurich: Premier Nightlife & Exclusive Events
