@@ -28,13 +28,13 @@ export default function Experience() {
 
           <meta
             name="keywords"
-            content="club, crystal club, crystal, home, about, girls, gallery, club, events, drinks, blogs, jobs, crystal club home, crystal club and lounge, crystal club and lounge home,, europe, girls, german, girls club, private party, bachelors party, birthday party, private dance, crystal club, private dance, birthday, bac party, party bachelor, party bachelor party"
+            content="club, crystal club, crystal, home, about, girls, gallery, club, events, drinks, blogs, jobs, crystal club home, crystal club and lounge, crystal club and lounge home,, europe, girls, german, girls club, private party, bachelors party, birthday party, private dance, crystal club, private dance, birthday, bac party, party bachelor, party bachelor party, crystal club , private dance, live shows, dancers, party , bachelors party, birthday party, nightclub , volketswil, nightclub in zurich"
           />
           <meta name="robots" content="index, follow" />
 
           <meta
             name="description"
-            content="Experience Zurich's elite nightlife at Crystal Club. Enjoy exclusive events, VIP service, and private dance performances in a luxurious, vibrant atmosphere."
+            content="Top-Nachtclub in Volketswil. Erlebe Live-Shows und gutes Ambiente. Grosser Club mit Fumoir. Jetzt mehr erfahren."
           />
         </Helmet>
         {/* <Header /> */}
