@@ -17,7 +17,7 @@ export default function Home() {
     <div className="homeContainer">
       <Helmet>
         <title>
-          Home - Crystal Club Zurich: Stripclub | Tabledance | Live Shows | Nightclub 
+          Crystal Club Zurich: Stripclub|Tabledance|Live Shows |Nightclub 
         </title>
         <meta name="description" content="Crystal Club & Lounge." />
         <link rel="canonical" href="https://crystalclub.ch/" />
