@@ -55,7 +55,7 @@ export default function Contact() {
 
         <meta
           name="description"
-          content="Top-Nachtclub in Volketswil. Erlebe Live-Shows und gutes Ambiente. Grosser Club mit Fumoir. Jetzt mehr erfahren."
+          content="Top-Nachtclub in Volketswil mit Live-Shows und toller Atmosphäre! Geräumiger Club mit rauchiger Atmosphäre für unvergessliche Nächte. Jetzt mehr entdecken!"
         />
       </Helmet>
       <section id="contact" className="contact section col-lg-7">
