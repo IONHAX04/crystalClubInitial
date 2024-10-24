@@ -21,7 +21,7 @@ export default function Drinks() {
             Crystal Club Zurich: Stripclub|Tabledance|Live Shows |Nightclub 
           </title>
           <meta name="description" content="Crystal Club & Lounge." />
-          <link rel="canonical" href="https://crystalclub.ch/" />
+          <link rel="canonical" href="https://www.crystalclub.ch/" />
 
           <meta
             name="keywords"
