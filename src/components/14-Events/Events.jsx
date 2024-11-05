@@ -17,7 +17,7 @@ const eventData = [
     description:
       "Get ready for a night of spine-chilling fun and eerie excitement at our Playboy Party!",
     content:
-      "Join us for a terrifyingly good time at our Halloween Party! The club will be transformed into a haunted house filled with spooky decor, eerie lighting, and fog-filled dance floors. Wear your scariest, funniest, or most creative costume and compete in our epic costume contest with amazing prizes for the best outfits. Dance the night away to haunting beats by our live DJ, enjoy special Halloween-themed cocktails, and capture the moment in our ghoulish photo booth. It's going to be a night full of thrills, chills, and unforgettable memories. Get your tickets now and be part of the frightful fun!",
+      "Join us for a terrifyingly good time at our Playboy Party! The club will be transformed into a haunted house filled with spooky decor, eerie lighting, and fog-filled dance floors. Wear your scariest, funniest, or most creative costume and compete in our epic costume contest with amazing prizes for the best outfits. Dance the night away to haunting beats by our live DJ, enjoy special Playboy cocktails, and capture the moment in our ghoulish photo booth. It's going to be a night full of thrills, chills, and unforgettable memories. Get your tickets now and be part of the frightful fun!",
     img: eventImg2,
     date: "20 Uhr, November 29, 2024",
   },
