@@ -18,7 +18,7 @@ import Events from "./components/14-Events/Events";
 
 import { IoCloseSharp } from "react-icons/io5";
 
-import bannerimage from "./assets/banners/banners.jpeg";
+import bannerimage from "./assets/banners/event2.jpg";
 
 import TextParallaxContentExample from "./components/Example/Example";
 

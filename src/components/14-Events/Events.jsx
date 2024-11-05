@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
 import eventImg1 from "../../assets/Discover/privateDance.JPG";
-import eventImg2 from "../../assets/Images/img5.JPG";
+import eventImg2 from "../../assets/banners/event2.jpg";
 import eventImg3 from "../../assets/Discover/clubSeven.JPG";
 import eventImg4 from "../../assets/Discover/clubEight.JPG";
 
@@ -13,13 +13,13 @@ import { Helmet } from "react-helmet";
 const eventData = [
   {
     id: 1,
-    title: "Halloween Party",
+    title: "Playboy Party",
     description:
-      "Get ready for a night of spine-chilling fun and eerie excitement at our Halloween Party!",
+      "Get ready for a night of spine-chilling fun and eerie excitement at our Playboy Party!",
     content:
       "Join us for a terrifyingly good time at our Halloween Party! The club will be transformed into a haunted house filled with spooky decor, eerie lighting, and fog-filled dance floors. Wear your scariest, funniest, or most creative costume and compete in our epic costume contest with amazing prizes for the best outfits. Dance the night away to haunting beats by our live DJ, enjoy special Halloween-themed cocktails, and capture the moment in our ghoulish photo booth. It's going to be a night full of thrills, chills, and unforgettable memories. Get your tickets now and be part of the frightful fun!",
     img: eventImg2,
-    date: "20 Uhr, 31.Oktober, 2024",
+    date: "20 Uhr, November 29, 2024",
   },
   // {
   //   id: 2,
