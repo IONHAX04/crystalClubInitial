@@ -73,7 +73,7 @@ export default function Blogs() {
                       <div className="post-meta">
                         <p className="post-author">Patrizia</p>
                         <p className="post-date">
-                          <time dateTime="2022-01-01">Nov 6, 2024</time>
+                          <time dateTime="2022-01-01">Nov 5, 2024</time>
                         </p>
                       </div>
                     </div>
@@ -81,15 +81,24 @@ export default function Blogs() {
                 </div>
 
                 <div className="col-lg-4">
-                  <article>
+                  <article
+                    onClick={() =>
+                      handleNavigate(
+                        "/elevate-your-night-exclusive-vibe-crystal-club"
+                      )
+                    }
+                  >
                     <div className="post-img">
                       <img src={blogImg2} alt="" className="img-fluid" />
                     </div>
 
-                    <p className="post-category">Politics</p>
+                    <p className="post-category">Crystal Club</p>
 
                     <h2 className="title">
-                      <a>Dolorum optio tempore voluptas dignissimos</a>
+                      <a>
+                        Elevate Your Night: Discover the Exclusive Vibe at
+                        Crystal Club
+                      </a>
                     </h2>
 
                     <div className="d-flex align-items-center">
@@ -99,9 +108,9 @@ export default function Blogs() {
                         className="img-fluid post-author-img flex-shrink-0"
                       />
                       <div className="post-meta">
-                        <p className="post-author">Maria Doe</p>
+                        <p className="post-author">Patrizia</p>
                         <p className="post-date">
-                          <time dateTime="2022-01-01">Jan 1, 2022</time>
+                          <time dateTime="2022-01-01">Nov 6, 2024</time>
                         </p>
                       </div>
                     </div>

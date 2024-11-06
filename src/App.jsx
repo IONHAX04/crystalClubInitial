@@ -30,6 +30,7 @@ import "aos/dist/aos.css";
 import Blogs from "./components/12-Blogs/Blogs";
 import GirlsGallery from "./components/08-Girls/GirlsGallery";
 import Blog1 from "./components/12-Blogs/BlogPages/Blog1";
+import Blog2 from "./components/12-Blogs/BlogPages/Blog2";
 
 export default function App() {
   const [model, setModal] = useState(true);
@@ -71,6 +72,10 @@ export default function App() {
           <Route
             path="/making-memories-top-reasons-crystal-club-bucket-list"
             element={<Blog1 />}
+          />
+          <Route
+            path="elevate-your-night-exclusive-vibe-crystal-club"
+            element={<Blog2 />}
           />
           <Route path="/rent" element={<Rent />} />
           <Route path="/drinks" element={<Drinks />} />
