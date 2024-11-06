@@ -29,6 +29,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Blogs from "./components/12-Blogs/Blogs";
 import GirlsGallery from "./components/08-Girls/GirlsGallery";
+import Blog1 from "./components/12-Blogs/BlogPages/Blog1";
 
 export default function App() {
   const [model, setModal] = useState(true);
@@ -67,6 +68,7 @@ export default function App() {
           <Route path="/join" element={<Join />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/blog1" element={<Blog1 />} />
           <Route path="/rent" element={<Rent />} />
           <Route path="/drinks" element={<Drinks />} />
           <Route path="/blogs" element={<Blogs />} />
