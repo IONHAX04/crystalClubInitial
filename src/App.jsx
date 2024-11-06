@@ -68,7 +68,10 @@ export default function App() {
           <Route path="/join" element={<Join />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/blog1" element={<Blog1 />} />
+          <Route
+            path="/making-memories-top-reasons-crystal-club-bucket-list"
+            element={<Blog1 />}
+          />
           <Route path="/rent" element={<Rent />} />
           <Route path="/drinks" element={<Drinks />} />
           <Route path="/blogs" element={<Blogs />} />

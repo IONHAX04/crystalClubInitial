@@ -44,7 +44,13 @@ export default function Blogs() {
             <div className="container">
               <div className="row gy-4">
                 <div className="col-lg-4">
-                  <article onClick={() => handleNavigate("/blog1")}>
+                  <article
+                    onClick={() =>
+                      handleNavigate(
+                        "/making-memories-top-reasons-crystal-club-bucket-list"
+                      )
+                    }
+                  >
                     <div className="post-img">
                       <img src={blogImg2} alt="" />
                     </div>
