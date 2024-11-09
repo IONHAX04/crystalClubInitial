@@ -42,6 +42,8 @@ export default function Experience() {
           <h3>{t("experience.crystalExperienceTitle")}</h3>
 
           <div className="divider"></div>
+          <h4>Short Peepshow</h4>
+          <p>5 Minuten | 60 CHF</p>
 
           <h4>{t("experience.peepShow")}</h4>
           <p>{t("experience.peepTime")}</p>
