@@ -47,6 +47,11 @@ import chanel1 from "../../assets/GirlsImg/chanel/chanel1.png";
 import chanel2 from "../../assets/GirlsImg/chanel/chanel2.png";
 import chanel3 from "../../assets/GirlsImg/chanel/chanel3.png";
 
+import ashley1 from "../../assets/GirlsImg/Ashley/ashley1.png";
+import ashley2 from "../../assets/GirlsImg/Ashley/ashley2.png";
+import ashley3 from "../../assets/GirlsImg/Ashley/ashley3.png";
+import ashley4 from "../../assets/GirlsImg/Ashley/ashley4.png";
+
 const blogData = [
   {
     id: 1,
@@ -96,6 +101,12 @@ const blogData = [
     img: chanel,
     galleryImages: [chanel1, chanel2, chanel3],
   },
+  {
+    id: 9,
+    title: "Ashley",
+    img: ashley1,
+    galleryImages: [ashley1, ashley2, ashley3, ashley4],
+  },
 ];
 
 export default function Girls() {
@@ -113,6 +124,7 @@ export default function Girls() {
       6: [amber1, amber2],
       7: [linda1, linda2, linda3],
       8: [chanel1, chanel2, chanel3],
+      9: [ashley1, ashley2, ashley3, ashley4],
     };
 
     navigate("/girlsGallery", {
