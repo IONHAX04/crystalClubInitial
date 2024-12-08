@@ -52,10 +52,10 @@ export default function App() {
 
   return (
     <>
-      <div className={model ? "model open opened" : "model"}>
+      {/* <div className={model ? "model open opened" : "model"}>
         <img src={bannerimage} />
         <IoCloseSharp onClick={() => setModal(false)} />
-      </div>
+      </div> */}
       <Router>
         <Header />
         <Routes>
